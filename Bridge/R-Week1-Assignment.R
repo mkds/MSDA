@@ -4,6 +4,8 @@ for (i in 1:12){
   fact=fact*i
 }
 cat("12 Factorial = ",fact,"\n")
+
+#Numeric Vector that contains the sequence from 20 to 50 by 5
 nvector=seq(20,50,5)
 cat("Numeric vector: ",nvector,"\n")
 
