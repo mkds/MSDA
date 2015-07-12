@@ -1,0 +1,61 @@
+
+---
+title: "Combination"
+author: "Mohan"
+date: "July 12, 2015"
+output: html_document
+---
+### Week 2 MSDA R Bridge Assignment
+
+####Combination Function
+My implementation of combination function. I choose to do the multiplication and division at each iteration so that the function will be able to compute  combinations for large numbers. Doing all multiplications (either using prod() function or other multiplication technique) before doing division causes the computation operation to quickly reach the max number limit and hence those techniques are not used.
+
+```{r}
+mychoose = function(n,r) {
+#Check if integer. If not round to a integer
+  if (n%%1 != 0) n = round(n)
+  if (r%%1 != 0) r = round(r)
+#Check for negativity and invalid cases
+  if (r < 0 | n < r) return(0)
+#Retrun 1 if n and r are same or r is zero  
+  if ( n == r | r == 0)   return(1)
+#nCr = nC(n-r). So use a large r value to reduce number of calcuations later  
+  if (r < n/2) r = n - r
+  c = 1
+#Use for loop and do the multiplication and division at each loop so that combination for large numbers can be calculated  
+#Note:Following loop computes (r+1)*(r+2)...n/(n-r)! which is same as n!/(n-r)!r!  
+  for (i in (r+1):n) c = c*(i/(i-r))
+  c
+}
+```
+
+
+####Test Runs - Let's run my implementation and R's Choose function
+**Simple Tests**
+```{r}
+mychoose(5,3)
+choose(5,3)
+
+mychoose(15,4)
+choose(15,4)
+```
+**Test for Large Numbers**
+```{r}
+mychoose(2000,229)
+choose(2000,229)
+```
+
+```{r}
+mychoose(2000,1815)
+choose(2000,1815)
+
+mychoose(100000,100000)
+choose(100000,100000)
+```
+**Negative Test Case**
+```{r}
+mychoose(5,-1)
+mychoose(-5,1)
+mychoose(-5,-1)
+mychoose(5,7)
+```
