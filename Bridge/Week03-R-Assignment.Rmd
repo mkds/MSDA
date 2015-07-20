@@ -1,0 +1,40 @@
+---
+title: "Mushrooms"
+author: "Mohan"
+date: "July 19, 2015"
+output: html_document
+---
+### Week 3 MSDA R Bridge Assignment
+
+####Mushroom Dataset
+**Description:** Read selective columns of mushroom data from web (github) and transform the dataset. 
+```{r, echo=FALSE}
+library(knitr)
+```
+```{r}
+mush_rl <- "https://raw.githubusercontent.com/mkds/MSDA/master/Bridge/agaricus-lepiota.data"
+```
+Below code reads columns 1,6,9,10,21 from the file. If a class of a column is "NULL" in read.table command, then that column is skipped.
+```{r}
+mushrooms <- read.table(file=mush_rl,sep=",",colClasses = c("factor",rep("NULL",4),"factor",rep("NULL",2),"factor","factor",rep("NULL",10),"factor",rep("NULL",2)),col.names=c("edible",rep("NULL",4),"odor",rep("NULL",2),"gill-size","gill-color",rep("NULL",10),"spore-print-color",rep("NULL",2)))
+```
+Check the dataset
+```{r}
+str(mushrooms)
+kable(head(mushrooms))
+```
+
+Change the level of factors, so that it is more descriptive. 
+
+```{r}
+attr(mushrooms$edible,"levels") <- c("edible","poisonous")
+attr(mushrooms$odor,"levels") <- c("almond","creosote","foul","anise","musty","none","pungent","spicy","fishy")
+attr(mushrooms$gill.size,"levels") <- c("broad","narrow")
+attr(mushrooms$gill.color,"levels")<-c("buff","red","gray","chocolate","black","brown","orange","pink","green","purple","white","yellow")
+attr(mushrooms$spore.print.color,"levels")=c("buff","chocolate","black","brown","orange","green","purple","white","yellow")
+```
+Check the transformed dataset
+```{r}
+str(mushrooms)
+kable(head(mushrooms))
+```
