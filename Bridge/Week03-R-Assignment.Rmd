@@ -8,7 +8,7 @@ output: html_document
 
 ####Mushroom Dataset
 **Description:** Read selective columns of mushroom data from web (github) and transform the dataset. 
-```{r, echo=FALSE}
+```{r}
 library(knitr)
 ```
 ```{r}
