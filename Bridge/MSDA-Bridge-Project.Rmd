@@ -1,0 +1,64 @@
+---
+title: "Math in Datascience"
+author: "Mohan"
+date: "July 26, 2015"
+output: 
+  html_document:
+    toc: true
+---
+###Intro###
+This page tries to demonstrate role of math in data science using a simple use cases.  The purpose is to highlight how mathematical computation can be useful in getting insights or predicting outcome.
+
+###Small Demo###
+For demonstration purpose I am going to take a small set of unknown (for time being) data point and illustrate how math could be used to solve that problem.
+
+Let's consider following data
+```{r}
+df1=data.frame(v1=c(300,100,800),v2=c(60,50,80),v3=c(50,400,0),R=c(91,225,168))
+df1
+```
+  
+Let's say our variable of interest is R. We like to know how v1, v2 and v3 impacts R. Though there are lot of mathematical model to solve the problem for this illustration purpose we will consider a simple one, i.e linear relation.
+
+The above data could be represented as Av=R where A is the data point for v1,v2,v3 and R is the data point for R.
+We could try to find solution for v in order to understand how it impacts R.
+Solving using matrix arithmetic
+```{r}
+solve(df1[,1:3])%*%df1[,4]
+```
+Solving this system of equation we find that R = .2v1 + .1v2 + .5v3
+<span style="color:blue">
+By representing the data in linear algebra and solving the same using matrix arithmetic we were able to understand how v1, v2 and v3 impacts R. More importantly We were able to establish a relation between the data points even though we didn't know what they exactly means or related. </span> When I reconstruct the data as given below you could see the relation  more clearly and better comprehend how each variable impacts the result.
+```{r}
+colnames(df1)<-c("CarDistance","BusDistance","TrainDistance","TotalCost")
+df1
+```
+In the above mentioned problem the variables had a linear relation and a linear  model would find a perfect solution as shown below. Linear models are simple and very useful in many cases and they rely on linear algebra concepts.
+```{r}
+lm(TotalCost~.+0,df1)
+```
+We just built a simple linear model which could be used to predict outcome i.e. predict total cost of travel given the distance traveled using car, bus and train. It may be a overkill to build a model for a problem that could be solved by simple formula. But, I was trying to take a simple case and explain how data science model use that to solve the problem. 
+
+For illustration I picked up  a simple and clear defined case. But, in real world we often encounter data points that may have an unknown math function that relates them. We may not be able to accurately find that underlying math function but data science tries to find a close or useable  one.
+
+
+**<span style="color:purple;font-size:15"> "Essentially, all models are wrong, but some are useful" -- George E. P. Box </span>**
+   
+### Math in Value At Risk ###
+Value At Risk is the widely used method for financial risk management.
+The VaR model relies on probability distribution models to estimate risk.  
+
+**Definition of VaR from investopedia.com**
+   
+A statistical technique used to measure and quantify the level of financial risk within a firm or investment portfolio over a specific time frame. Value at risk is used by risk managers in order to measure and control the level of risk which the firm undertakes. The risk manager's job is to ensure that risks are not taken beyond the level at which the firm can absorb the losses of a probable worst outcome.
+
+Let's look at VaR in its simplest form. VaR computes the possible max loss of value given a confidence interval. For example let's say given below is the value of stock for past 200 days.
+```{r}
+set.seed(100)
+price=rnorm(200,52,sd=10)
+plot(density(price),type="l",main="200 Day Price")
+```
+   
+In the above case the stock price follows normal distribution with average price of 52 and standard deviation of 10. Given this <span style="color:blue"> we could compute using normal distribution that the value at risk for given stock at 95% confidence interval as 20 </span> (i.e Two standard deviation). Please note that in the industry the VaR computation is more advanced given that not many stock prices follow normal distribution. The computations are adjusted based on the closest probabilistic distribution and other systemic effects. But, in essence Billions of dollars hinges on computation of probability.
+
+   
