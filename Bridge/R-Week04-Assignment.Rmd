@@ -33,13 +33,13 @@ From the graph we could observe that the rating approximately follows normal dis
 
 Let's compare the rating with various parameter using scatterplot
 ```{r}
-pairs(~rating+year+budget+votes,data=movies[movies$year>1980,])
+pairs(~rating+year+budget+votes,data=movies[after80,])
 title(list("Rating and other movie factors"),line=3)
 ```
     
 Now, let's try to find famous movies
 ```{r}
 library(wordcloud)
-wordcloud(substr(movies$title[movies$year>1980],1,30),movies$rating[movies$year>1980]^2*movies$votes[movies$year>1980],max.words = 100,colors = brewer.pal(8,"Dark2"),scale=c(2,0),random.order = F)
+wordcloud(substr(movies$title[after80],1,30),movies$rating[after80]^2*movies$votes[after80],max.words = 100,colors = brewer.pal(8,"Dark2"),scale=c(2,0),random.order = F)
 title(list("Famous Movies",col="purple"),line=3)
 ```
