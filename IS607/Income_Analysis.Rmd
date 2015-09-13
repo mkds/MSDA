@@ -1,0 +1,71 @@
+---
+title: "Income Analysis"
+author: "Mohan Kandaraj"
+date: "September 12, 2015"
+output: 
+  html_document:
+          toc: true
+---
+---
+###About 
+This page provides simple analysis of census data. The dataset used in the page is sourced from <https://archive.ics.uci.edu/ml/datasets/Adult>. 
+
+###Load Data
+Let's read and examine the data.
+```{r Load}
+file_url <- "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data"
+income=read.table(file=file_url,sep=",")
+str(income)
+```
+Name the variables
+```{r name}
+colnames(income)<-c("age","workclass","fnlwgt","education","education_num","marital_status","occupation","relationship","race","sex","capital_gain","capital_loss","hours_per_week","native_country","income_level")
+```
+
+###Tidy Up and Prepare Data
+Let's tidy up the data
+
+```{r}
+#Drop columns that are not required
+income$fnlwgt=NULL
+#Attach the dataframe for easy reference
+attach(income)
+#Check for missing values that may cause problem. Dataset has unknown values i.e a level for ?. But that is fine as it would just be considered as a category
+table(complete.cases(income))
+#There are no missing values
+#Is capital-gain and capital-loss are exclusive? If not net gain/loss would be useful
+any(capital_gain!=0 & capital_loss!=0)
+#Let's create a variable which captures if the person is involved in capital market using the capital gain and loss variable
+income$capital_market = capital_gain !=0 | capital_loss != 0
+
+```
+
+### Visualization
+
+Let's plot some graph to better understand the data and draw some information
+
+Let's check education level
+
+```{r, education}
+boxplot(education_num~income_level,outline=F,xlab="Income Level",ylab="Education Level",main="Income Vs Education")
+
+```
+
+Let's check if participation in capital market
+```{r, Capital}
+prop.table(table(income_level,income$capital_market),2)
+# 57.9% people participating in capital market earn more than 50k
+```
+
+Let's Plot multiple all categorical variable... 
+```{r, Features}
+library(ggplot2)
+for  (i in 1:ncol(income)-2) {
+  if (is.factor(income[,i])){
+    pl =ggplot(income,aes_string(colnames(income)[i],fill="income_level"))+geom_bar(position="dodge") + theme(axis.text.x=element_text(angle=70))
+    print(pl)
+  }
+  
+}
+```
+
