@@ -57,7 +57,7 @@ prop.table(table(income_level,income$capital_market),2)
 # 57.9% people participating in capital market earn more than 50k
 ```
 
-Let's Plot multiple all categorical variable... 
+Let's Plot all categorical variables... 
 ```{r, Features}
 library(ggplot2)
 for  (i in 1:ncol(income)-2) {

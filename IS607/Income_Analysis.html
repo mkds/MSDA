@@ -138,7 +138,7 @@ income$capital_market = capital_gain !=0 | capital_loss != 0</code></pre>
 ##        &lt;=50K 0.8097070 0.4209407
 ##        &gt;50K  0.1902930 0.5790593</code></pre>
 <pre class="r"><code># 57.9% people participating in capital market earn more than 50k</code></pre>
-<p>Let’s Plot multiple all categorical variable…</p>
+<p>Let’s Plot all categorical variables…</p>
 <pre class="r"><code>library(ggplot2)
 for  (i in 1:ncol(income)-2) {
   if (is.factor(income[,i])){
