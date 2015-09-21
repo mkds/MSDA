@@ -1,0 +1,87 @@
+---
+title: "Regular Expressions"
+author: "Mohan Kandaraj"
+output: html_document
+---
+###About
+
+This page provides some sample regular expression operations in R.
+
+###Regular Expressions in R
+
+
+Describe the types of strings that conform to the following regular expressions and construct an example that is matched by the regular expression.
+
+The pattern, description (as comment) and examples are provided inside code chunk.
+  
+```{r}
+library(stringr)
+pattern="[0-9]+\\$"
+#Description: One or More numbers followed by $ symbol.
+examples=c("1234$","ab12$ab","1$")
+str_detect(examples,pattern)
+```
+  
+  
+```{r}
+pattern="\\b[a-z]{1,4}\\b"
+#A word of 1 to 4 letters
+examples=c("a","bc","xyz","wxyz","123 abcd 12c")
+str_detect(examples,pattern)
+```
+  
+  
+```{r}
+pattern=".*?\\.txt$"
+#String pattern ending with .txt (ie. .txt followed by end of line or new line)
+examples=c(".txt","abc.txt","123abc.txt","a$b#1.txt")
+str_detect(examples,pattern)
+```
+ 
+  
+```{r}
+pattern = "\\d{2}/\\d{2}/\\d{4}"
+#Numbers in the format nn/nn/nnnn
+examples=c("92/36/1234","01/01/2015 Happy newyear!","!! 12/31/2015 !!")
+str_detect(examples,pattern)
+```
+
+  
+  
+```{r}
+pattern="<(.+?)>.+?</\\1>"
+#Tag format. One or more character inside < > followed by one or more character and followed by  the same characters that was inside < > earlier, but this time inside </ >. Similar to <html> something </html>
+examples=c("<tag>Text</tag>","<Font size=4,color=blue>Blue Text</Font size=4,color=blue>")
+str_detect(examples,pattern)
+```
+
+```{r}
+#Rewrite the expression [0-9]+\\$ in a way that all elements are altered but the expression performs the same task
+#Answer: \\d+[$]
+pattern1="[0-9]+\\$"
+pattern2="\\d+[$]"
+example=c("1$","123$","a1$a")
+str_detect(example,pattern1)
+str_detect(example,pattern2)
+```
+Consider the mail address chunkylover53[at]aol[dot]com.
+
+Transform the string to a standard mail format using regular expressions.
+```{r}
+mail_raw="chunkylover53[at]aol[dot]com"
+find_pattern="(.+?)\\[at\\](.+?)\\[dot\\](.+)"
+replace_pattern="\\1@\\2\\.\\3"
+str_replace(mail_raw,find_pattern,replace_pattern)
+```
+Imagine we are trying to extract the digits in the mail address. To do so we write the expression [:digit:]. Explain why this fails and correct the expression.
+[:digit:] will seach for single digit and will return the each digit as separate item. [:digit:]+ will return the contiguous list of digits.
+```{r}
+str_match_all(mail_raw,"[:digit:]+")
+```
+
+
+```{r}
+#Instead of using the predefined character classes, we would like to use the predefined symbols to extract the digits in the mail address. To do so we write the expression \\D. Explain why this fails and correct the expression.
+# Answer: \\D extracts non digits and each non digit is returned as an items. The correct expression is \\d+
+str_match_all(mail_raw,"\\d+")
+```
