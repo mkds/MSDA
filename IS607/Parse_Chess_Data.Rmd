@@ -1,0 +1,101 @@
+---
+title: "Parse Chess Tournament Data"
+author: "Mohan Kandaraj"
+output:
+  html_document:
+    theme: cerulean
+    toc: yes
+    toc_depth: 4
+  word_document: default
+---
+###About
+This page demonstrates text file processing in R using regular expressions.
+
+###Problem Statement
+A text file with chess tournament results is given. Generates a .CSV file with the following information for all of the players:
+Player's Name, Player's State, Total Number of Points, Player's Pre-Rating, and Average Pre Chess Rating of Opponents
+
+###Solution Approach
+Extract the required details from the text file using regular expression. Process the pair of rows that provides the details for a player and store the extracted detail into a row of dataframe. Then, construct the details required for the output CSV file using dataframe operations. Write the output file.
+
+###Solution
+
+Load required libraries 
+
+```{r library, results="hide"}
+library(RCurl)
+library(stringr)
+library(knitr)
+```
+####Function to parse pair of line
+```{r parse_lines}
+parse_lines=function(line1_string,line2_string){
+  #Reg exp for (id)|(name)|(pts)|(game_string)
+  line_one_pattern="(\\d+).+?\\|(.+?)\\|(\\d*\\.?\\d*).+?\\|(.+)"
+  #Get required text using Reg exp
+  parse1=str_match_all(line1_string,line_one_pattern)[[1]]
+ 
+  #Convert and Store text in dataframe
+  value=data.frame(id=as.integer(parse1[2]),name=str_trim(parse1[3]),pts=as.numeric(parse1[4]))
+  game_string=parse1[5]
+  #Pattern of game details  
+  game_pattern="\\D +(\\d*)\\|"
+  #Get the opponent list
+  opponent_list=as.numeric(str_match_all(game_string,game_pattern)[[1]][,2])
+  #Add each opponent as column
+  value=cbind(value,matrix(unlist(opponent_list),nrow=1))
+  #Name opponent columns properly
+  colnames(value)[4:10]=paste0("opponent.",1:7)
+  
+  #Let's process second line
+  #Second line pattern
+  line_two_pattern=" +(\\D+).+?\\|.+?: +(\\d+).+"
+  #Get required value using reg Exp
+  parse2=str_match_all(line2_string,line_two_pattern)[[1]]
+  #Add state and pre tournament point of the player
+  value=cbind(value,state=parse2[2],pre_point=as.numeric(parse2[3]))
+  #Done
+  return(value)
+}
+
+```
+   
+Vectorize the function
+```{r vector_function}
+parse_lines_all=Vectorize(parse_lines,SIMPLIFY = F)
+```
+
+####Function that computes opponent score
+```{r avg_oppo_rating}
+avg_opp_rating=function(x_opp,all_x) round(mean(all_x$pre_point[all_x$id %in% x_opp],na.rm=T))
+```
+####Main Process
+Read the file and call our parse function
+```{r}
+#Get file data from Github
+file_content=getURL("https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/tournamentinfo.txt")
+#Read file data into a dataframe
+file_text=read.table(text=file_content,sep="\n",stringsAsFactors = F,skip=4)
+#Process in block of three
+block_start=seq(1,nrow(file_text),3)
+#Pass pair of rows to our parse function and append return values
+parsed_value=do.call("rbind",parse_lines_all(file_text[block_start,],file_text[block_start+1,]))
+rownames(parsed_value)=NULL
+
+#Compute opponent score
+parsed_value$avg_opp_rating=apply(parsed_value[,4:10],1,avg_opp_rating,all_x=parsed_value)
+#Select the columns 
+output_file=parsed_value[c("name","state","pts","pre_point","avg_opp_rating")]
+# Ta da...
+kable(output_file)
+```
+   
+   
+---
+###Output File
+Write to File. File Link <https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/chess_output.csv>
+```{r,eval=FALSE}
+write.table(output_file,"chess_output.csv",col.names=F,row.names = F,sep=",")
+```
+
+
