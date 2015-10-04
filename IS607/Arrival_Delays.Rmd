@@ -1,0 +1,44 @@
+---
+title: "Arrival Delay"
+author: "Mohan Kandaraj"
+date: "October 4, 2015"
+output: html_document
+---
+R program to tidy up a wide data for analysis
+
+####Wide Data
+```{r, message=FALSE}
+delay_wide=read.csv(file="https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/delays.csv", na.strings = "")
+delay_wide
+```
+
+####Tidy up Data   
+Let's transform the data that will allow as to compare the delays of two airlines  
+ 
+```{r, message=FALSE, warning=FALSE}
+library(tidyr)
+library(dplyr)
+library(reshape2)
+
+
+delay <- delay_wide  %>%
+  gather(airport,flights,3:7,na.rm=T) %>% #Convert Airport from multi column to a column value pair
+  fill(1) %>% #If a value is blank then fill with non blank value from previous row
+  spread(X.1,flights) %>% #Convert one column key value to multi column value
+  rename(airline=X) %>% #Rename column X to airline
+  melt %>% 
+  dcast(airline + airport ~ variable,sum,margins="airport") %>% #Melt and Recast to add totals by airline
+  mutate(airport=gsub("\\."," ",airport),delay_pct=delayed/(delayed+`on time`))
+   
+#Let's look at transformed Data
+delay
+```
+
+####Analysis of Delay 
+
+From below chart we could see that at every airport the delay percentage for "AM WEST"" is higher than ALASKA airline. But if we look at all flights (the first bar on the chart) then ALASKA has more arrival delays than AM WEST. So who is the winner?
+
+```{r plot, message=FALSE, warning=FALSE}
+library(ggplot2)
+ggplot(delay,aes(x=airport,y=delay_pct))+geom_bar(aes(fill=airline),stat="identity",position="dodge")+geom_text(aes(label=format(100*..y.., digits=2)),stat="identity",vjust=-.5,hjust=.5)+labs(x="Airport",y="Delay",fill="Airline") 
+```
