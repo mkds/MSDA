@@ -1,0 +1,145 @@
+---
+title: "Tidy Data - Three Approaches"
+author: "Mohan Kandaraj"
+output:
+  html_document:
+    theme: cerulean
+    toc: yes
+    toc_depth: 4
+  word_document: default
+---
+##Convert untidy Data to Tidy Data - Three approaches   
+
+##Intro   
+
+This page demonstrates three different ways of tidying up the data.   
+1. Natural way - Using Tidyr package  
+2. Fast(in terms of runtime) way - Using data.table  
+3. Hard way - Without using any built-in function/package  
+
+Most of the operations are explained as code comments within the code chunck.
+
+###Natural Way - Using Tidyr Package
+I choose Jason Joseph's problem as that was a good wide data candidate for Tidyr package.
+
+Jason has extracted the data from http://www.census.gov/foreign-trade/data/index.html and provided a nice sample file. Thanks Jason for the csv.
+
+```{r library,message=F,warning=F}
+library(tidyr)
+library(dplyr)
+library(knitr)
+trade_wide=read.table(file="https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/International Trade in Goods and Services.csv",stringsAsFactors = F,header = T,na.strings = "",sep = ",")
+print(trade_wide)
+
+#Remove Rows which has all the values as NA
+trade_wide=trade_wide[rowSums(is.na(trade_wide))!=8,]
+
+#Rename the columns in line with the values of the column
+colnames(trade_wide)=c("Month","Type","Exports 2013","Imports 2013","Exports 2014","Imports 2014","Exports 2015","Imports 2015")
+
+#Now let's use tidyr and dplyr to transform the data
+
+trade=trade_wide %>% 
+  gather(cat,value,3:8) %>% #Collapse column 3 to 8 into two column (key and value pair)
+  separate(cat,c("Trade","year")) %>% #Split the Trade type and year which is stored in one column to two separate columns
+  fill(1) %>% #Fill missing values with previous row values
+  filter(!is.na(Type)) %>% #Remove rows with type NA
+  mutate(value=as.numeric(gsub(",","",value))) #Remove thousand separator in numbers  
+
+head(trade)
+
+#Now that we got the data in desired format, let's answer the question average trade by month and type
+kable(trade %>% group_by(Month,Type) %>% summarise(Avg=mean(value)))
+```
+
+###Fast way - Using data.table  
+For this approach I choose to work with the data provided by Christina Taylor. This data require some transformation and join and so I wanted to try that out in data.table. In general data.table operations tend to execute much faster than tidyr.
+
+```{r,message=F,warning=F}
+library(data.table)
+library(ggplot2)
+
+jobopening=fread("https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/JobOpen.csv") #Note: fread is faster than read.csv and does a better job in detecting separator and column classes
+head(jobopening)
+
+jobopening[,`Actual Start Date`:=as.Date(`Actual Start Date`,"%m/%d/%Y")] #Convert date string to Date type
+
+#Compute Quater and year of actual start Date
+jobopening[,`:=`(Qtr=paste0("Q",(as.numeric(format(`Actual Start Date`,"%m"))-1)%/%3+1),Year=format(`Actual Start Date`,"%Y"))] 
+
+head(jobopening)
+
+hctarget=fread("https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/hctarget.csv")[-.N]
+head(hctarget)
+
+#Collapse Quaterly columns to Qtr/Value column
+hctarget=melt(hctarget,measure.vars = c("Q1_2015","Q2_2015","Q3_2015","Q4_2015"),variable.name="Qtr",value.name="Target")
+
+#Split Qtr column to Qtr/Year
+hctarget[,c("Qtr","Year"):=tstrsplit(Qtr,"_")]
+head(hctarget)
+
+#Set Key values so that we can do data table joins
+setkey(jobopening,Role,Location,Qtr,Year)
+setkey(hctarget,Role,Location,Qtr,Year)
+
+#Compute total hires and extract only required column
+hired=jobopening[!is.na(Year),.(hires=.N),by=.(Role,Location,Qtr,Year)]
+#Join hired data and target data
+results=hired[hctarget]
+#Convert NAs to zero
+results$hires[is.na(results$hires)]=0
+
+head(results)
+#Heat Map of (Actual Vs Target) by year and Quarter using ggplot facet
+ggplot(results,aes(Location, Role)) + geom_tile(aes(fill=hires/(Target-Current_HeadCount)*100)) + scale_fill_gradient2(low="white",high="green") + facet_grid(~Year+Qtr) + labs(fill="Achieved%") + theme(axis.text.x=element_text(size=12),axis.text.y=element_text(size=12))
+
+```
+
+###Hard way - Without using any built-in function/package
+What if the data that we get is so messy and we couldn't use any package? I wanted to try and tidy up data without using any package and see how it goes. I choose the data posted by Maxwell Wagner Th data is sourced from https://en.wikipedia.org/wiki/Motocross_des_Nations.
+
+For this problem I came up with solution assuming that tidyr and ddplyr are not available and I have to do the tidy part myself.
+   
+I defined a function that pretty much performs the tidyr::gather function  
+```{r}
+my_gather=function(x,cols,keyname,valuename){
+  all_keyvalue=NULL
+  for (y in cols){c
+    varname=colnames(x)[y]
+    keyvalue=cbind(varname,x[,y,with=FALSE],x[,.I])
+    colnames(keyvalue)=c(keyname,valuename,"row")#The extra row column is to keep track of the row to which this column needs to be attached to
+    all_keyvalue=rbind(all_keyvalue,keyvalue)
+  }
+  all_keyvalue
+  
+}
+```
+   
+Then, I performed the data cleansing and tidying as shown below  
+```{r}
+
+moto_wide=fread("https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/motocross.csv",stringsAsFactors = F)
+head(moto_wide)
+keyvalues=my_gather(moto_wide,2:17,"year","position")#Collapse columns to key value pair  
+head(keyvalues)
+#Extract Numbers from the strings
+keyvalues[,`:=`(year=as.numeric(gsub("\n","",year)),position=as.numeric(gsub("(\\d+).*","\\1",position)))]
+#Add row number as column so that we can join by row
+moto_wide[,row:=.I]
+setkey(moto_wide,row)
+setkey(keyvalues,row)
+#Join keyvalues with the required values from original data
+moto=keyvalues[moto_wide[,.(Team,row)]][,.(Team,year,position)]
+head(moto)
+
+#Note that all above function could be performed easily using tidyr as given below
+# moto=moto_wide %>% gather(year,position,2:17) %>% 
+#      mutate(year=as.numeric(gsub("X..","",year)),position=as.numeric(gsub("(\\d+).*","\\1",position)))
+#
+
+#Now that we got the long data let's try to answer the question of  average finishes and average standing
+kable(moto %>% 
+  group_by(Team) %>% 
+  summarize(finishes=sum(!is.na(position)),Avg_position=mean(position,na.rm=T)) %>%
+  arrange(Avg_position))
