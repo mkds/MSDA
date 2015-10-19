@@ -1,0 +1,24 @@
+<books>
+<book>
+<title>Calvin and Hobbes</title>
+<author>Bill Watterson</author>
+<publisher>Andrew McMeel Publishing</publisher>
+<genre>Humor</genre>
+<type>comic</type>
+</book>
+<book>
+<title>Harry Potter</title>
+<author>J.K. Rowling</author>
+<publisher>Arthur A. Levine Book</publisher>
+<genre>Fantasy</genre>
+<type>Fiction</type>
+</book>
+<book>
+<title>Head First Java</title>
+<author>Berts Bates</author>
+<author>Kathy Sierra</author>
+<publisher>O'Relly</publisher>
+<genre>Programming</genre>
+<type>Text Book</type>
+</book>
+</books>

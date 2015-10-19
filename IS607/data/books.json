@@ -1,0 +1,30 @@
+{
+  "books": {
+    "book": [
+      {
+        "title": "Calvin and Hobbes",
+        "author": "Bill Watterson",
+        "publisher": "Andrew McMeel Publishing",
+        "genre": "Humor",
+        "type": "comic"
+      },
+      {
+        "title": "Harry Potter",
+        "author": "J.K. Rowling",
+        "publisher": "Arthur A. Levine Book",
+        "genre": "Fantasy",
+        "type": "Fiction"
+      },
+      {
+        "title": "Head First Java",
+        "author": [
+          "Berts Bates",
+          "Kathy Sierra"
+        ],
+        "publisher": "O'Relly",
+        "genre": "Programming",
+        "type": "Text Book"
+      }
+    ]
+  }
+}
