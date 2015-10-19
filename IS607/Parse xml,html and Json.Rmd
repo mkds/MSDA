@@ -1,0 +1,54 @@
+---
+title: "Parse XML, HTML and JSON"
+author: "Mohan Kandaraj"
+date: "October 18, 2015"
+output: html_document
+---
+
+Parse xml to dataframe  
+As xmlToDataFrame does not handle duplicate nodes properly let's create a function
+
+```{r}
+xmlNodeValue=function(root,keyname="Id"){
+  x=xmlToDataFrame(root,collectNames = F)
+  x=as.data.frame(t(x))
+  x$node=rownames(x)
+  colnames(x)[1]="value"
+  rownames(x)=NULL
+  x$Id=x[1,1]
+  colnames(x)[3]=keyname
+  x=x[2:nrow(x),]
+  x[,c(3,2,1)]
+}
+```
+  
+Now convert the xml to data frame
+```{r, warning=FALSE}
+library(XML)
+library(knitr)
+bookxml=xmlParse(readLines("https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/books.xml"))
+root=xmlRoot(bookxml)
+xmlbooks=NULL
+for (i in 1:xmlSize(root)) xmlbooks=rbind(xmlbooks,xmlNodeValue(root[i],"title"))
+rownames(xmlbooks)=NULL
+kable(xmlbooks)
+```
+  
+Covert HTML table to data frame
+```{r}
+library(tidyr)
+library(dplyr)
+htmltext=readLines("https://raw.githubusercontent.com/mkds/MSDA/d47fd834bbb37c1cfa7b48cd5613aa46e5cbc6aa/IS607/data/books.html")
+hbooks=as.data.frame(readHTMLTable(htmltext)[[1]])
+hbooks[hbooks==""]=NA
+htmlbooks= hbooks %>% fill(1) %>% gather(node,value,-title) %>% filter(value!="") %>% arrange(title)
+kable(htmlbooks)
+```
+
+Convert JSON to data frame.. I found a package to convert JSON to data frame. But, the structure is different from the one I came up for XML and HTML
+```{r}
+library(jsonlite)
+jsontext=readLines("https://raw.githubusercontent.com/mkds/MSDA/master/IS607/data/books.json")
+booksjson= data.frame(fromJSON(jsontext)[[1]][[1]])
+kable(booksjson)
+```
