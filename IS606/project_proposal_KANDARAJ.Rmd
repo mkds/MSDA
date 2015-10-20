@@ -1,0 +1,102 @@
+---
+output: pdf_document
+---
+```{r include=FALSE, cache=FALSE}
+# DO NOT REMOVE
+# THIS IS FOR SETTING SOME PLOTTING PARAMETERS SO THAT YOUR PLOTS DON'T TAKE UP TOO MUCH SPACE
+# IF YOU WOULD LIKE TO CHANGE THESE, SEE HELP FILES ON THE par() FUNCTION
+# OR ASK FOR HELP
+library(knitr)
+## set global chunk options
+opts_chunk$set(fig.path='figure/manual-', cache.path='cache/manual-', fig.align='center', fig.show='hold', par=TRUE)
+## tune details of base graphics (http://yihui.name/knitr/hooks)
+knit_hooks$set(par=function(before, options, envir){
+if (before && options$fig.show!='none') par(mar=c(4,4,.2,.1),cex.lab=.95,cex.axis=.9,mgp=c(2,.7,0),tcl=-.3)
+})
+```
+
+```{r}
+# load data
+scorecard=read.csv("https://s3.amazonaws.com/ed-college-choice-public/Most+Recent+Cohorts+(Scorecard+Elements).csv",stringsAsFactors = F)
+
+```
+
+
+### Research question 
+
+**You should phrase your research question in a way that matches up with the scope of inference your dataset allows for.**  
+   
+1. Are students at private for-profit institution have lower rate of federal loan repayment compared to students at non-profit institutions?
+
+2. Predict federal loan repayment rate of students from an institution based on the data collected by Integrated Postsecondary Education Data System (IPEDS), National Student Loan Data System (NSLDS) and Administrative Earnings Data from Tax Records. 
+
+
+### Cases 
+
+**What are the cases, and how many are there?**  
+
+Each case is aggregation of following data collected for an institution for the cohort under study  
+1. Education data of the institution (graduation rates, student subgroups, tuition, cost of attendance etc.) (IPEDS)  
+2. Federal financial aid for the institution for the cohort under consideration   
+3. Earnings data of the students from cohort under consideration
+
+There are 7804 cases available. If required, I may pick a smaller sample from these cases for the project after doing initial analysis. I will check with you when I like to do so.
+
+### Data collection 
+
+**Describe the method of data collection.**  
+Education Data- Collected annually through surveys administered by the Department of Education’s National
+Center for Education Statistics (NCES)
+
+Federal Financial Aid - Collected from federal load records. This data is taken from the National Student Loan Data System (NSLDS) which is the Department of Education’s central
+database for monitoring federal student aid—primarily federal student loans and Pell grants
+
+Earnings Data - From Tax records
+
+### Type of study 
+
+**What type of study is this (observational/experiment)?**  
+This study is observational.
+
+
+### Data Source 
+
+**If you collected the data, state self-collected. If not, provide a citation/link.**  
+
+Data source: <https://collegescorecard.ed.gov/data/>
+
+
+
+### Response 
+
+**What is the response variable, and what type is it (numerical/categorical)?**  
+
+The response variable is RPY\_3YR\_RT_SUPP (Three year repayment rate considering repayments that results in declining balance). The response variable is numerical
+
+
+### Explanatory 
+
+**What is the explanatory variable, and what type is it (numerical/categorical)?**  
+
+The main explanatory variable is CONTROL (indicates if institution is for-profit, not for-profit or public). The explanatory variable is categorical
+
+### Relevant summary statistics 
+
+**Provide summary statistics relevant to your research question. For example, if you’re comparing means across groups provide means, SDs, sample sizes of each group. This step requires the use of R, hence a code chunk is provided below. Insert more code chunks as needed.**
+
+```{r, warning=FALSE}
+#Convert response to numerics
+scorecard$RPY_3YR_RT_SUPP=as.numeric(scorecard$RPY_3YR_RT_SUPP)
+sumstat=aggregate(scorecard$RPY_3YR_RT_SUPP,list(scorecard$CONTROL),summary)
+sumstat$Group.1=c("Public","Private NonProfit","Private for-Profit")
+stats=sumstat$Group.1
+stats=cbind(stats,sumstat$x)
+sds=aggregate(scorecard$RPY_3YR_RT_SUPP,list(scorecard$CONTROL),sd,na.rm=T)
+stats=cbind(stats,sds$x)
+colnames(stats)[c(1,9)]=c("Inst_Type","sd")
+stats=as.data.frame(stats)
+stats$`NA's`=NULL
+
+kable(stats,caption = "Repayment Rates")
+
+```
