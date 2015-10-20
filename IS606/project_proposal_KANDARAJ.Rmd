@@ -1,5 +1,5 @@
 ---
-output: pdf_document
+output: html_document
 ---
 ```{r include=FALSE, cache=FALSE}
 # DO NOT REMOVE
