@@ -1,0 +1,85 @@
+---
+title: "Get Data Using Web API"
+author: "Mohan Kandaraj"
+date: "November 1, 2015"
+output: word_document
+---
+
+This page demonstrates getting data from web using an Web API using an R program. New York Times provides web APIs that provide various content from nytimes.com. The Top Stories API is used in this program to fetch the top stories from NYT.
+
+Three functions are developed to handle the Top Stories API.  
+   
+**Function: top_stories_uri**  
+The function top_stories_uri constructs the URI for the top stories API given the section name and apikey
+  
+```{r}
+#Function to construct URI
+top_stories_uri=function(section,apikey,response_format=".json"){
+  paste0("http://api.nytimes.com/svc/topstories/v1/",section,response_format,"?api-key=",apikey)
+}
+```  
+  
+**Function:process_top_stories***  
+Function process_top_stories takes the json response from the top stories API and formats it into a dataframe   
+   
+```{r}
+#Process json response
+process_top_stories=function(response){
+  library(jsonlite)
+  #Convert json to nested dataframe
+  response_dfs=fromJSON(response)
+  #Get result count
+  count = response_dfs$num_results
+  #Initialize output data frame
+  topstories=data.frame(matrix(numeric(0), nrow = count))
+  results=response_dfs$results
+  topstories$Title=results$title
+  topstories$Abstract=results$abstract
+  topstories$url=results$url
+  topstories$By=results$byline
+  topstories$Tags=results$org_facet
+  #return output dataframe
+  topstories
+}
+```
+   
+   
+**Function: get_nyt_top_stories**  
+This is the main function that act as the interface for the NYT top stories API. This function invokes the API for the given topic and returns formatted dataframe. This makes use of the other two functions mentioned above.
+   
+```{r}
+
+get_nyt_top_stories=function(section,apikey){
+  library(RCurl)
+  raw_response=""
+  #Construct the URI for the request
+  uri=top_stories_uri(section,apikey)
+  raw_response=getURI(uri)
+  #The GET failed, could be bad URI or bad connection
+  if (raw_response==""){
+    print("Error:Get Failed")
+    return
+  }
+  #Able to get response, but response indicates it's error
+  if (substr(raw_response,3,7)=="error"){
+    print("Warning: Error response received")
+    return
+  }
+  #Process the json response
+  process_top_stories(raw_response)
+  
+}
+
+```
+   
+Let's try to get the top stories  
+  
+```{r}
+#Read api key
+apikey=as.character(read.table("nytapikey.txt",header = F,stringsAsFactors = F))
+#Get top stories
+topstories=get_nyt_top_stories("home",apikey)
+library(knitr)
+#display top stories
+kable(topstories,caption="NYT Top Stories")
+```
