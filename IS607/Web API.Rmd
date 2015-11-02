@@ -2,7 +2,7 @@
 title: "Get Data Using Web API"
 author: "Mohan Kandaraj"
 date: "November 1, 2015"
-output: word_document
+output: html_document
 ---
 
 This page demonstrates getting data from web using an Web API using an R program. New York Times provides web APIs that provide various content from nytimes.com. The Top Stories API is used in this program to fetch the top stories from NYT.
@@ -47,7 +47,7 @@ process_top_stories=function(response){
 **Function: get_nyt_top_stories**  
 This is the main function that act as the interface for the NYT top stories API. This function invokes the API for the given topic and returns formatted dataframe. This makes use of the other two functions mentioned above.
    
-```{r}
+```{r.message=F,warning=F}
 
 get_nyt_top_stories=function(section,apikey){
   library(RCurl)
@@ -72,9 +72,9 @@ get_nyt_top_stories=function(section,apikey){
 
 ```
    
-Let's try to get the top stories  
+**Let's try to get the top stories**  
   
-```{r}
+```{r,message=F,warning=F}
 #Read api key
 apikey=as.character(read.table("nytapikey.txt",header = F,stringsAsFactors = F))
 #Get top stories
@@ -82,4 +82,12 @@ topstories=get_nyt_top_stories("home",apikey)
 library(knitr)
 #display top stories
 kable(topstories,caption="NYT Top Stories")
+``` 
+  
+  
+**Let's check the sports stories..**    
+  
+```{r,message=F,warning=F}
+sportstories=get_nyt_top_stories("sports",apikey)
+kable(sportstories)
 ```
