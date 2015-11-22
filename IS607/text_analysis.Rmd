@@ -1,0 +1,100 @@
+---
+title: "Text Analysis"
+author: "Mohan Kandaraj"
+date: "November 21, 2015"
+output: html_document
+---
+###Intro
+This page demonstrates how text analysis could be done in R. For text analysis demonstrated in this page, the bag of words technique is used to process the text and h2o random forest model is used as classification model.  
+
+###Data
+The data for this demo program is sourced from <http://www.crowdflower.com/data-for-everyone>. A subset of the GOP Debate dataset provided on the crowdflower site is used here. The tweets that are labeled either Positive or Negative is used for text analysis. 
+
+```{r}
+data_url="http://cdn2.hubspot.net/hubfs/346378/DFE_CSVs/GOP_REL_ONLY.csv?t=1447974095863"
+debate_tweets = read.csv(data_url, stringsAsFactors=FALSE)
+#Take only tweets marked as either positvie or negative
+debate_tweets=debate_tweets[debate_tweets$sentiment=="Positive"|debate_tweets$sentiment=="Negative",]
+str(debate_tweets)
+```
+
+###Cleanse Data
+When using bag of words technique, text punctuations and stopwords are not that useful. So, typically they are removed from the text before processing. Similarly the words are replaced with stem words so that variation of word (for exampl smile vs smiling) are not considered as different words.  
+
+```{r,message=FALSE,warning=FALSE}
+library(tm)
+#Build corpus
+corpus = Corpus(VectorSource(debate_tweets$text))
+# Convert to lower-case
+corpus = tm_map(corpus, tolower)
+corpus = tm_map(corpus, PlainTextDocument)
+
+# Remove punctuation
+corpus = tm_map(corpus, removePunctuation)
+
+# Remove stopwords
+corpus = tm_map(corpus, removeWords,stopwords("english"))
+
+# Stem document 
+corpus = tm_map(corpus, stemDocument)
+```
+    
+###Bag of Words  
+Once the text is cleansed then the text is split into words and frequency of each word is counted. The text is converted into a matrix of frequency of the words with each row having count of the words from each text. The columns of this matrix represent the words and so the columns of this matrix are unique words found in entire text being analyzed. As the number of unique words may run into large number typically sparse words (words that don't appear often, for example words that has frequency of 1%) are removed in order to reduce compuatational cost.
+
+```{r,message=FALSE,warning=FALSE}
+#Get frequency of words
+frequencies = DocumentTermMatrix(corpus)
+#Dimension before removing sparse terms
+dim(frequencies)
+
+# Remove sparse terms
+corpus_dense = removeSparseTerms(frequencies, 0.99)
+
+#Dimension after removing sparse terms
+dim(corpus_dense)
+
+# Convert to a data frame
+tweets_df = as.data.frame(as.matrix(corpus_dense))
+
+# Make all variable names R-friendly
+colnames(tweets_df) = make.names(colnames(tweets_df))
+
+# Add sentiment variable
+tweets_df$sentiment = factor(debate_tweets$sentiment)
+```
+   
+###Build Model
+In order to build model 70% of the data is taken as test data. Then the model is validated against 30% of the data. I have used random forest from h2o package. H2o package builds randomforest quickly compared to randomForest package.  
+
+```{r,message=F,warning=FALSE}
+#Convert column names to Ascii so that h2o can work with it
+colnames(tweets_df)=iconv(colnames(tweets_df), to='ASCII', sub='')
+# Split the data to test and train dataset
+library(caTools)
+set.seed(100)
+split = sample.split(tweets_df$sentiment,0.7)
+train = subset(tweets_df, split==TRUE)
+test = subset(tweets_df, split==FALSE)
+
+#Using h2o library for fast randomforest 
+library(h2o)
+h2o.init(nthreads = 7,max_mem_size = '4G',assertion = F)
+#Variables to be used for prediction
+x_var=colnames(tweets_df)[-172]
+
+#Covert to h2o frames
+htrain=as.h2o(train)
+htest=as.h2o(test)
+#hwo random forest model
+tweet_sentiment = h2o.randomForest(x=x_var,y="sentiment",ntree=200,max_depth = 70, training_frame=htrain)
+tweet_sentiment
+
+
+#Predict test sentiment
+test_sentiment = as.data.frame(h2o.predict(tweet_sentiment,htest)[[,1]][1])
+
+#Check how accurate the predictions are
+table(test$sentiment, test_sentiment$predict)
+
+```
