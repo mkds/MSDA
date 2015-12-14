@@ -1,0 +1,14 @@
+---
+author: "Mohan Kandaraj"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 4
+  html_document:
+    theme: cerulean
+    toc: yes
+    toc_depth: 4
+  word_document: default
+  
+---
