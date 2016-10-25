@@ -1,0 +1,835 @@
+U.S. Senators on Tuesday sharply criticized a new Securities and Exchange Commission rule forcing companies to disclose their use of derivatives.
+Both the SEC and the Financial Accounting Standards Board have issued proposals to make companies disclose more about derivatives use following some high-profile losses on the complex instruments in 1994.  
+Derivatives, financial instruments such as options and futures whose value is based on an underlying stock or commodity price, were involved in the bankruptcy of Orange County, Calif., and losses exceeding $100 million at Procter &amp; Gamble Co.
+The SEC adopted its rules last month, while the FASB is still working on its proposal.
+On Capitol Hill on Tuesday, senators took aim at both approaches, charging that the added expenses and complications would discourage companies from properly using derivatives to reduce risk.  
+"One of my chief concerns when I came to the Senate in 1993 was whether we had too many unnecessary rules and regulations," North Carolina Republican Sen. Lauch Faircloth said at a hearing of the Senate Banking Committee's securities subcommittee. "I am concerned this may be the case with the SEC's new rule."
+"At this juncture, I don't agree with the direction we're heading in," Faircloth added.
+FASB is a private organization that makes accounting standards, but the SEC must approve its rules to make them binding on public companies.  
+Senators questioned whether the the recent rule proposals adequately addressed the 1994 problems. While the rules focus on derivatives, the 1994 situations were caused not by the instruments but by the people in charge of those investments, Sen. Christopher Dodd said.
+"I think what most of us concluded was the problem there was not the instrument but the human element," the Connecticut Democrat said.
+And neither rule would affect Orange County, a municipal government not bound by most FASB or SEC rules, the legislators observed.  
+"Interestingly enough, the regulation, as almost always happens, doesn't even apply to Orange County -- it applies to corporate America," said Sen. Phil Gramm, who presided over the hearing.
+Gramm opened the hearing expressing his doubts about the rules. After hearing from industry representatives and SEC commissioner Steven Wallman, the Texas Republican said he was still worried.
+"I'm not converted," Gramm said. "In fact, every concern I had at the beginning, I have even more now."  
+Gramm was a prominent opponent of the accounting board in an earlier dispute over proposed rules on executive stock options.
+In an unprecedented vote, the Senate passed a non-binding resolution in 1994 urging FASB to abandon the plan that would have required companies to reduce earnings to account for the value of stock options granted to executives. A few months after the vote, the board quashed the proposal.
+That was the only previous time he took on the FASB, Gramm said after Tuesday's hearing. "I just never could figure out where they were coming from," he said.  
+The Republican Congress has since passed a law allowing legislators to overturn agency rules directly, Gramm said. "I think we have the power in Congress to override the regulation if we decided to," he said, but added "I haven't made that decision."
+Commissioner Wallman defended the new rules and said the SEC had made several changes from an earlier proposal to address industry complaints.
+He denied the rules would discourage companies from properly using derivatives to manage and reduce business risk.
+"Quite the opposite, the better investors understand the potential impact of market-sensitive instruments on their investments, the more likely it is that management will be able to engage in appropriate risk management," Wallman said.
+--Aaron Pressman ((202-898-8312))
+Two members of Congress criticised the Federal Reserve Thursday for what they called its "woefully inadequate" record of hiring and promoting women and minorities.
+Representative Henry Gonzalez and Representative Jesse Jackson Jr., in a letter to Fed chairman Alan Greenspan, said several discrimination lawsuits against the bank "show a clear need for reform."
+The letter paired persistent Fed critic Gonzalez, a Democrat from Texas serving his 19th term in Congress, with second-term Illinois Democrat Jackson, son of the well-known civil rights leader.
+A Fed spokesman declined comment.
+One of the lawsuits, filed against the central bank in January by four black secretaries, may be expanded as 15 other current and former employees have asked to join the litigation, the two Democratic lawmakers said.
+"As one of the nation's primary banking regulators, the Federal Reserve should serve as a model for the banking system it regulates," the two wrote to Greenspan.
+"Despite being at the forefront in carrying out the nation's laws, we are concerned that the Federal Reserve's record of diversity in hiring and promotion is woefully inadequate."
+The four black secretaries filed suit Jan. 21 in the U.S. District Court for the District of Columbia on behalf of themselves and "all others similarly situated."
+A black Fed researcher won a similiar suit against the bank in 1994, the Congressmen noted.
+Gonzalez and Jackson asked Greenspan to assess the validity of the complaints and report if any action has been taken to address the alleged problems.
+They did commend the central bank for increasing the number of women and minorities among the most highly paid Fed employees over the past three years.
+In 1993, only one woman and one non-white were among the 35 top paid staff earning more than $125,000. Now, with 72 people making that much, 11 are women and five are minorities.
+The hiring of additional women "is an important step in ending what appeared to be gender bias in the selection of top staff, but it is still below comparable government standards which are also too low," Gonzalez and Jackson said. Minority representation "remains poor."
+Commuters stuck in traffic on the Leesburg Pike in Northern Virginia are just a few hundred yards away from an even bigger jam, one that stretches around the world.
+This is a traffic jam of bits and bytes, digital data travelling through one of the main arteries of the global Internet.
+With thousands of new users signing on every day, the Internet's data routes are brimming with traffic and some predict the imminent demise of the net due to overcrowding.
+"Demand for the Internet is outstripping supply," said Mark Luker, programme director of the National Science Foundation's network infrastructure project.
+But work is under way to provide more capacity through technical solutions and ways are being explored to ration the Internet by price, through fees based on the speed and quantity of data.
+The facility in Northern Virginia is a computer interchange, called Mae East, where 46 major and minor Internet service providers come together to exchange data travelling across the Internet.
+BUSIEST PUBLIC EXCHANGE POINT ON THE INTERNET, FIRM SAYS
+MFS Communications Inc, which runs Mae East and its California counterpart Mae West, describes it as "the busiest public exchange point on the Internet." Peak loads run as high as 53 million bytes per second.
+Until April 1995, the National Science Foundation (NSF) managed and financed the common highway underpinning most of the Internet, called a network backbone.
+Before the network was phased out in favour of privately managed networks, traffic increased steadily from 1.3 trillion bytes a month in March 1991 to a high of 17.8 trillion bytes in late 1994, the equivalent of transfering the entire contents of the Library of Congress every four months.
+The private system sends data across a host of different company networks and crowded interchange points. As the load continues to increase, MFS and the Internet providers can add more fibre optic lines and switching equipment, but that is expensive and still may fail to keep up with rising usage.
+Some providers are setting up smaller, one-to-one interchanges to relieve the burden on Mae East. MCI Communications, which has seen a 5,000 percent increase in Internet traffic since the beginning of 1995, set up 22 circuits for one-to-one exchanges.
+For now, the best solution is to keep adding hardware, said Luker. "But in the long run, you can solve problems by adding knowledge to the system instead of brute force," he said.
+The NSF recently announced 13 grants for the development of high speed networking technologies and software programmes.
+IDEAS TO REDUCE CONGESTION
+One project hopes to reduce congestion by developing a system, called caching, to hold copies of popular sites at duplicate locations around the world.
+If an Internet user in Japan tries to download a web page in New York, the data must travel all the way around the world, even if another user in Japan has just downloaded the same page. With a cache, the second user could grab the page from a closer computer that the data had already gone through.
+"A cache automatically duplicates the pages that are used most often," Luker explained. The NSF had sponsored a study at the National Laboratory for Advanced Networking Research of a cache that "is showing great improvements in traffic."
+A procedure called multicasting could also reduce repetitive data transfers, said Robert Hagens, MCI's director of Internet engineering. Multicasting sends a stream of data such as sound or video across the net that can be accessed by many users.
+"If you look at the radio stations beginning to appear on the Internet, they commonly require each listener to open a connection to the station so you've got a lot of duplication," Hagens said. "With multicast, you put that data into a stream of packets that only get duplicated when they have to."
+New ways of charging for Internet usage may alter the traffic patterns, as well. At the moment, most users pay a flat rate for Internet service regardless of how much capacity they use. Sending e-mail is considerably less taxing than sending live videos, but users pay the same for both.
+"The Internet is a mature technology but an immature economy," said Hal Varian, dean of the University of California's School of Information Management and Systems. The current pricing model does not provide incentives to Internet providers to offer high quality service, he said.
+People who need high priority channels for sending live video might have to pay more, Varian said, but basic tasks like sending e-mail will remain essentially free.
+Varian also predicted Internet service providers will begin paying each other based on the amount of traffic they exchange, much as phone carriers make settlement payments to foreign telecommunications companies for completing international calls.
+Much of the slowdown experienced by individuals trying to surf the World Wide Web is caused by limits at each end of a connection rather than by delays moving across the network.
+Web pages reside on computer servers that can be overwhelmed when too many requests arrive at the same time. And many individuals access the Internet through relatively slow modem links.
+Such delays could be eased by a proposal from Sun Microsystems to create a new Internet standard for the way computers access each others' files.
+Called Web Network File System, the protocol reduces the burden on the computer holding the web pages, speeding the transfer of files and allowing three times as many Internet surfers to gain access at one time, according to Sanjay Sinha, head of Sun's Solaris Server project.
+"In real life, most web servers are heavily loaded," Sinha said. Sun's web file system "doesn't require that load."
+User delays are real, but by some measures the Internet's performance has actually improved over the last few years.
+Matrix Information and Directory Services of Austin, Texas, compiles a weather report which it publishes on the Internet.
+The report, updated every four hours, shows how long it takes a small message to travel from Matrix's headquarters to 4,500 major computers around the world and back.
+Traffic clogging the Internet slows the round trips. The reports show huge fluctuations in Internet traffic, with "rush hour" occuring weekdays as business users log on.
+But the average delay declined by 30 percent between January 1994 and January 1996, according a report by Matrix.
+A broad coalition of corporations went to Capitol Hill on Tuesday to lobby in favor of relaxed export restrictions on computer encoding technology.
+On Thursday, the Senate Commerce Committee will mark-up the Promotion of Commerce Online in the Digital Era Act of 1996 known as Pro-CODE, a bill that would abolish most export restrictions.
+Under a Cold War-era munitions statute, only weak encryption programs created in the United States can be sold abroad, although domestic use of encryption is not regulated.
+Companies in the high-tech industry argued they are losing business to foreign competitors who are not bound by U.S. export restrictions. And multinational companies in other industries said the the restrictions hamper their ability to conduct business overseas.
+"We are at a competitive disadvantage vis-a-vis our foreign competitors and that is an unacceptable situation," Gregory Garcia, director of international trade affairs for the American Electronics Association, said at a press briefing here.
+The Pro-Code bill, sponsored by Republican Senator Conrad Burns of Montana, Democratic Senator Pat Leahy of Vermont and others, has bipartisan support in the Commerce Committee.
+"We support the Burns bill because it does enable companies to utilize encryption technology securely which is vital if we're going to compete in a very tough global marketplace," Victor Parra, president of the Electronic Messaging Association, said.
+The association represents companies that rely on electronic communications, including Exxon Corp, Citicorp and Boeing Co, Parra said.
+Encryption programs use mathematical formulas to scramble information and render it unreadable without a password or software "key."
+Earlier this week, Senator James Exon, the Nebraska Democrat, came out against the current bill in a letter to Commerce Committee chairman Sen Larry Pressler. Exon will likely offer amendments at the mark-up, an aide to the senator said.
+The Clinton administration opposes the Pro-CODE bill, arguing that export of encryption technology would hamper law enforcement and intelligence gathering operatiobns.
+The House Judiciary Committee will hold a hearing on a similiar measure on September 25.
+--202-898-8312
+On the Internet, where new products come and go in the blink of an eye, time is said to move at "Internet speed."
+But in the rarefied air of Congress, where legislation often moves at a glacial pace, few would equate "Washington time" with the speed of cyberspace. That may be changing, however, as Congress struggles to come to grips with the Net as a phenomenon with great potential for reaching voters.
+In the 1996 election, exit polls showed more than one-fourth of voters were "wired" and about 10 percent primarily used online sources of information in deciding how to vote. Responding to the surge in Net use by voters, congressional Internet use also has skyrocketed by some measures.
+At the begining of 1994, just a handful of lawmakers had posted home pages on the World Wide Web. Two years later, 222 representatives and 85 senators had Web pages. The Congressional Internet Caucus has 91 members, up from 60 in the last Congress.
+Despite the flurry of activity, Congress will never be on the cutting edge, according to some who work in the capital.
+"I expect Congress will always be one or many steps behind," Chris Casey, who helped set up the first congressional Web page for Sen. Edward Kennedy, told a briefing about the Web for congressional staff sponsored by the Internet caucus last week.
+A question about when Congress would be "up to speed" on the Net brought peals of laughter from the audience of staffers.
+BEYOND WEB PAGES
+Nonetheless, some legislators have gone beyond posting simple Web pages and have integrated the Net into the most basic operations of their congressional offices. Rep. Anna Eshoo, a California Democrat whose district encompasses Silicon Valley, created a special area on her Web site to give constituents individualized information (http://www-eshoo.house.gov). A constituent sends Eshoo a query and receives a personal answer posted on a private part of the site accessible only to that individual with a password.
+Sen. Pat Leahy, Democrat of Vermont, participates in live online chat sessions with school children in his home state with transcripts on his Web site (http://www.senate.gov/leahy). Leahy's office also is planning to start a newsgroup, a type of group mailing list on the Net, devoted to Vermont issues.
+Almost all legislators accept electronic mail but most respond on paper through the mail. Leahy's office is one of the few that answer e-mail with e-mail, staffer Paul Mann said. Although some feared this might overwhelm the office with too many messages, "surprisingly it hasn't happened," Mann said.
+For the co-chairman of the Internet Caucus, Rep. Rick White, the Internet is a key foundation of his media strategy.
+"The first place we send any press release is to our Web page," White staffer Aaron Weissman told the Web information session. Even media staff for the Washington state Republican Party look to the Web site (http://www.house.gov/white) to find copies of a release to send to the media, Weissman added.
+The Internet is also changing the way groups lobby Congress. The Citizen's Internet Empowerment Coalition set up a Web page to get Internet users to send e-mail to Congress on the issue of restricting obscenity on the Net (http://www.ciec.org).
+But since legislators are most interested in hearing from voters in their own districts, the page looks up the e-mail address of an Internet user and guides users to send targeted messages. "We have a responsibility as advocates to educate Internet users," said Jonah Seiger of the Center for Democracy and Technology, which helped set up the coalition's site.
+Much more remains to be done to educate users and legislators. While the text of bills is available online, some advocates want Congress to make more information available.
+"There are broad sections of the electorate that are entirely uninformed about what our Congress does," Gary Ruskin, director of the Congressional Accountability Project, said. "So much of the problem is that it is very, very difficult to obtain in real time the core documents of our democracy."
+Ruskin urged that Congress post an assortment of documents on the Web, including voting records, disclosure forms, testimony from hearings and draft legislation.
+Legislators continued to debate on Wednesday one of the most difficult issues related to U.S. financial sector reform, but little common ground emerged.
+While most in Congress and industry now agree the Depression-era laws separating banking from other financial businesses should be eliminated, there is little consensus about going farther and allowing banks to combine with ordinary commercial firms.  
+House Banking Committee chairman Jim Leach, who has previously opposed mixing banking and commerce, reiterated his opposition at a hearing Wednesday.
+"The more you keep financial services separate from commerce, the better," Leach said in testimony before the Banking Committee's Capital Markets Subcommittee.
+The Iowa Republican has introduced a bill that would allow minimal combinations among banks and commercial firms. On the other side, Rep. Richard Baker, chairman of the subcommittee, has offered a bill that would impose virtually no limits on such combinations.  
+A possible middle approach, contained in a bill introduced by Rep. Marge Roukema, Republican of New Jersey, and Rep Bruce Vento, Democrat of Minnesota, would allow financial companies to conduct up to 25 percent of their business in non-financial activities.
+Baker, republican from Louisiana, continued to back his approach at the hearing.
+"With limited regulatory oversight and greater vigor, financial institutions can pursue consumer demand and can broaden activities," he said. "That should include commerce."  
+Leach did offer some new nuances to his previous statements on the issue. He provided the subcommittee with charts prepared by the Federal Reserve outlining the hypothetical mergers permitted under various approaches.
+For example, a 25 percent limit on non-financial activity based on total asset size would allow a large bank like Chase Manhattan to acquire all but six of the largest companies in the entire country. If Chase merged with a large securities firm like Salomon Brothers, the Fed data indicated it could acquire even Exxon Corp, fourth largest company in the country based on market value.  
+A 10 percent limit would leave 18 companies out of Chase's sights or eight from a merged Chase-Salomon.
+Based on the Fed's findings, Leach suggested that, if Congress does include a percentage-based limitation, the limit should be a portion of total capital.
+"If it seems that modest investment experimentation should be granted banks, a basket that relates to capital rather than business activity might, at least initially, be more prudential and less market distorting," he said.
+Looking at book equity values as a measure of capital, the Fed found Chase would be barred from acquiring the 74 largest companies in the United States under a 25 percent cap. Under a 10 percent cap, 215 large companies would be off-limits. ((--202-898-8312))
+A top federal regulator Thursday urged banks to be more careful in issuing credit cards as an industry group reported that late payments by consumers jumped to a record level at the end of last year.
+The latest sign that consumers are overburdened with credit card debt came in survey by the American Bankers Association.
+The group said that in the fourth quarter of 1996 late payments jumped to 3.72 percent of credit card accounts, the highest rate since it began tracking delinquencies in 1980 and up from 3.34 percent a year earlier.
+The survey, in conjunction with earlier reports that personal bankruptices are at record levels and bank losses from credit card loans are growing, has bank regulators on edge.
+Comptroller of the Currency Eugene Ludwig, whose office oversees almost 3,000 nationally chartered banks, said the problems, while still under control, raise concerns about the safety and soundess of banks.
+"We are continuing to see signs of slippage in some areas that you and we must address now," he told a New York State Bankers Association meeting in Washington on Thursday.
+"It is worrisome to consider that there was a 44 percent growth in credit card losses and a 50 percent increase in credit card delinquencies during the past year," Ludwig said.
+Ludwig also noted that bank chargeoffs on credit cards "increased significantly" in January to 6.5 percent of the $220 billion of loans outstanding from 4.7 percent a year earlier.
+"These statistics are particularly troubling given the current health of the economy," he said.
+As a result, the Comptroller's office issued an advisory to banks on credit underwriting standards and portfolio credit risk management, Ludwig said.
+"The role of the regulator is to take action before potential problems become real problems," Ludwig said. "Our goal is to remind national banks how changes in underwriting standards affect overall portfolio credit risk and to highlight the key component of an effective portfolio credit risk management process."
+Tighter loan standards should prevent the problem from getting out of hand, but losses may grow further before the new standards have an impact, Ludwig said.
+"Current losses likely represent weaker credits making their way through the pipeline," he said. "We can expect some continued losses, but hopefully we'll begin to see positive effects of those cautious underwriting decisions."
+Bankers had expected that tighter credit standards put into place in recent years would already have started reducing losses.
+"We are disappointed that the numbers didn't improve," American Bankers Association chief economist James Chessen said. "We had hoped that banks' tightening of credit standards over the last several years would have reversed the trend of delinquencies by now."
+In the fourth quarter of 1996, 37 percent of banks reported tightening standards, a drop from 49 percent in both the second and third quarters of 1996, the association said.
+Delinquency rates also ticked up on home equity loans, the group reported. The delinquency rate was 1.42 percent in the fourth quarter of 1996, compared with 1.29 percent in the previous quarter and 1.41 percent in the same period the previous year.
+On auto loans, the delinquency rate was 2.03 percent in the fourth quarter of 1996, compared with 1.95 percent the previous quarter and 1.87 percent a year earlier.
+Delinquent payments are defined as 30 days or more overdue.
+Congress revives the debate over encryption export policy this week but much has changed since last year's tussles.
+Once the domain of spies and generals, encryption has become a critical component of electronic commerce and global communications on the Internet.
+This year, the Clinton administration has a new policy in place allowing freer export of encryption products, programs that scramble information and render it unreadable without a password or software "key."
+The new Clinton policy, enacted through executive order in November and in effect since January 1, allows export of stronger encryption than previously allowed. But it requires companies to incorporate features within two years allowing the government to crack the codes by getting access to the software keys.
+The government says it needs the ability to crack strong encryption to catch criminals and terrorists.
+While a few companies, most notably International Business Machines, have obtained export licenses under the new policy, most high-tech companies remain frustrated.  
+They want to be able to export very strong encryption without including the government access features.
+Privacy advocates also oppose the current Clinton policy, which they say puts too much power in the hands of government.
+Since the government does not require guaranteed access to the keys to one's home, it should not be given such access to the keys to one's data, they argue. "My lock, my key," is the slogan on their buttons this week.
+In congress, the passage of time has crystallized the issue for many members and both sides in the debate have found new allies. Last year, most lawmakers seemed either in favor of relaxed export restrictions or undecided.
+The full Senate Commerce Committee will hear testimony Wednesday on two bills introduced in the Senate to remove almost all export restrictions, and Thursday, the House Judiciary subcommittee on Courts and Intellectual Property will debate a similiar bill under consideration there.
+While the list of supporters of the bills has grown, some outspoken opponents have surfaced for the first time.
+Sen Bob Kerrey made a statement on the Senate floor March 3 opposing the Senate bills.  
+"The administration's policy not only can work, it is working," the Nebraska Democrat said. "Congress should let the administration's negotiations and policies on encryption go forward, to succeed or fail on their own merits."
+At confirmation hearings for Anthony Lake to head the Central Intelligence Agency last week, senators also raised the encryption issue and appeared to side with the administration, including Kerrey, Sen John Kyl, Republican of Arizona, and Sen John Kerry, Democrat of Massachusetts.
+Lake Monday dropped out of the running for CIA chief.
+Kyl plans to make a policy statement on the issue shortly, a staffer said, possibly as soon as Wednesday at a hearing on Internet crime in the Judiciary subcommittee Kyl chairs.
+Sen Max Baucus was also said to be leaning towards the administration but a spokeswomen denied the Montana Democrat was inclined toward either side. Baucus is seeking a consensus approach and "has taken no position on any of the proposed bills," spokeswoman Naomi Seligman said.
+Sen Kerry's office did not return calls for comment.  
+At the House encryption hearing, Under Secretary of Commerce William Reinsch, deputy director of the National Security Agency William Crowell and a member of the Department of Justice criminal division, will defend the Clinton policy.
+The Senate will also hear from FBI director Louis Freeh and special encryption envoy David Aaron.
+Industry representatives at the hearings will include officials from Netscape Communications Corp, one of the most vocal administration critics, and Microsoft Corp.
+Privacy advocates will testify in the House, including Jerry Berman, executive director of the Center for Democracy and Technology, and Marc Rotenberg, director of the Electronic Privacy Information Center.
+((--202-898-8312))
+Congress revives the debate over encryption export policy this week but much has changed since last year's tussles.
+Once the domain of spies and generals, encryption has become a critical component of electronic commerce and global communications on the Internet.
+This year, the Clinton administration has a new policy in place allowing freer export of encryption products, which are programmes that scramble information and render it unreadable without a password or software "key."
+The new Clinton policy, enacted through executive order in November and in effect since January 1, allows export of stronger encryption than previously allowed. But it requires companies to incorporate features within two years allowing the government to crack the codes by getting access to the software keys.
+The government says it needs the ability to crack strong encryption to catch criminals and terrorists.
+While a few companies, most notably International Business Machines, have obtained export licenses under the new policy, most high-tech companies remain frustrated.
+They want to be able to export very strong encryption without including the government access features.
+Privacy advocates also oppose the current Clinton policy, which they say puts too much power in the hands of government.
+Since the government does not require guaranteed access to the keys to one's home, it should not be given such access to the keys to one's data, they argue. "My lock, my key," is the slogan on their buttons this week.
+In congress, the passage of time has crystallised the issue for many members and both sides in the debate have found new allies. Last year, most lawmakers seemed either in favour of relaxed export restrictions or undecided.
+The full Senate Commerce Committee will hear testimony Wednesday on two bills introduced in the Senate to remove almost all export restrictions, and Thursday, the House Judiciary subcommittee on Courts and Intellectual Property will debate a similiar bill under consideration there.
+At the House encryption hearing, Under Secretary of Commerce William Reinsch, deputy director of the National Security Agency William Crowell and a member of the Department of Justice criminal division, will defend the Clinton policy.
+The Senate will also hear from FBI director Louis Freeh and special encryption envoy David Aaron.
+Industry representatives at the hearings will include officials from Netscape Communications Corp., one of the most vocal administration critics, and Microsoft Corp.
+Privacy advocates will testify in the House, including Jerry Berman, executive director of the Centre for Democracy and Technology, and Marc Rotenberg, director of the Electronic Privacy Information Centre.
+Federal bank regulators have begun prodding U.S. financial institutions to prepare for possible computer problems in the year 2000.
+Many computers and software programs record only the last two digits of a year and could mistakenly treat the year 2000 as the year 1900. For banks, confused computers could erroneously trigger a wave of bounced checks, missed loan payments and miscalculated interest rates.
+In letters to Senate Banking Committee Chairman Alfonse D'Amato, regulators said they were aware of the dangers.  
+The various agencies, including the Federal Deposit Insurance Corp and the Office of the Comptroller of the Currency, said they had formed an interagency working group to address the issue, often referred to as the "Millennium Bug."
+"The costs of making systems year 2000 compliant will be substantial and may affect some banks' earnings," Comptroller Eugene Ludwig, whose office oversees almost 3,000 national banks, wrote in a letter dated March 21. "Most experts believe that even the most prepared organizations will encounter some problems."  
+"The year 2000 rollover could pose substantial risks to the financial services industry," Nicholas Retsinas, director of the Office of Thrift Supervision, warned.
+Analysts have said corporations and governments might have to spend $300 to $600 billion worldwide to correct the problem by rewriting software and reprogramming hardware.
+Even if banks correct all of their own computers, they could be brought down by computer errors from their major customers or third-party vendors, the regulators added.  
+Bank examiners will question banks about year 2000 preparations this year, hopefully alerting them in time for solutions to be implemented and tested well before the end of 1999.
+Some programs may fail much sooner as they try to process current transactions such as mortgage loans that extend beyond the year 2000.
+"This is not a project that can be delayed or the deadline extended," Federal Deposit Insurance Corp Director Nicholas Ketcha wrote in a recent memo to the agency's regional directors. "Because of the nature of some date related calculations, many software programs currently running which are not year 2000 compliant may fail at some point prior to December 31, 1999."
+The letters were in response to a query on the topic issued by Senator D'Amato earlier this month. The Banking Committee is reviewing the responses and had no immediate comment, a spokesman said.
+((--202-898-8312))
+Privacy advocates warned Wednesday that the Clinton administration's latest proposal to modify controversial computer encryption export restrictions would trample on citizens' rights in cyberspace.
+Encryption products scramble information and render it unreadable without a password or software "key."
+Under a Clinton executive order that took effect Jan. 1, U.S. companies can export stronger encryption than previously allowed, but only if they promise to incorporate within two years features allowing the government to decode any message.
+The strongest encryption, an increasingly important component of online commerce and global communications, cannot be exported unless it already includes a feature known as "key recovery" that allows the government to crack the code by gaining access to the software keys.
+The administration's latest proposal, being circulated in the form of draft legislation, is designed to encourage companies to produce software with key recovery features.
+The proposal also establishes the legal foundation for a key recovery system, criminalizing the improper disclosure of keys, for example.
+Although domestic use of strong encryption is not restricted and the Clinton proposal affirms that policy, privacy advocates contended the government's "encouragement" would quickly devolve into a de facto requirement.
+"The proposed bill would destroy any prospect of privacy and security on the Internet by opening a huge window of vulnerability to the private communications of Internet users," said Jerry Berman, executive director of the Centre for Democracy and Technology, a non-profit public interest group.
+Under the proposal, the government would have "carte blanche" access to coded messages, Berman added.
+Commerce Undersecretary William Reinsch, in testimony last week, said the proposal would not compel participation. "The administration has stated on numerous occassions that we do not support mandatory key escrow and key recovery, " he said.
+Opposition to the Clinton approach continued to simmer elsewhere as well this week.
+In Congress, where several bills have been introduced to gut the export restrictions, Republicans on the House Commerce Committee pressed administration officials for a defence of the current policy.
+Committee Chairman Tom Bliley of Virginia and Representative Rick White of Washington sent letters asking for more information to the Commerce Department, FBI and National Security Agency, among others.
+White already has endorsed one of the bills to relax the restrictions. "It's time to take a close look at the export restrictions that are in place," White said. The Internet should not be "stifled by federal regulations and ill-conceived public policies."
+In the private sector, people in the software industry said they expected a high-profile application to export encryption from Sybase Inc. would be rejected soon. Some companies, including International Business Machines Corp., have received permission to export encryption under the current policy.
+Commerce Department officials declined to comment on pending applications.
+The export rules require that key recovery products allow government access to stored data, like a document saved on a computer hard drive, as well as live communications, like a telephone conversation or electronic mail message.
+Encryption customers only want to buy products with key recovery for stored data, U.S. companies have argued. Allowing key recovery of live communications is a more complicated and expensive proposition, they said.
+Sybase sells software that allows a computer user on a network to access a database of information located on another computer on the network. The company applied for permission earlier this month to export a product that allows for access to keys used to encrypt the stored information in a database.
+But to enhance security, the Sybase programme also encrypts the communications over the network between the computer user and the database. The product does not provide access to the keys used to encrypt those communications, according to Tom Parenty, director of data and communication security at the Emeryville, Calif.-based company.
+"We're doing nothing for communications because there is absolutely no customer demand or need for any kind of key recovery for communications," Parenty said. "What we are proposing is something that we can sell."
+The number of banks charging non-customers for using their automated teller machines doubled over the past six months, a consumer watchdog group said Tuesday.
+About 45 percent of ATMs added the controversial surcharge, on top of the fee most consumers already pay their own banks for using another bank's machine, up from 23 percent in October, according to a survey by U.S. Public Interest Research Group.
+The non-profit consumer advocacy group also found that the average fee had risen 20 percent to $1.15 from 96 cents.
+"Banks aren't earning money the old-fashioned way. Instead, they're gouging consumers," Edmund Mierzwinski, program director for the group, told a press conference.
+Two states, Connecticut and Iowa, have banned the practice of charging non-customers and 12 other states, along with the federal government, are considering similar legislation.
+Mierzwinski endorsed those efforts and said consumers should avoid using machines that impose a surcharge.
+The rise in fees followed a decision one year ago by the two largest ATM networks, Visa's Plus and Mastercard's Cirrus, to lift a prohibition on surcharges.
+Banks defended the practice and said the additional fees helped pay for ATMs in new locations.
+"The marketplace should decide the prices for ATMs, not the government," the American Bankers Association said in a statement. "Price controls will only inhibit innovation and put a halt to future ATM growth."
+Banks added almost 17,000 new ATMs last year, a 13 percent increase, according to a survey by the publication Bank Network News. With surcharges now permitted, "ATM growth is accelerating," editor Don Davis said. "It's a better business to be in, so more people are getting in."
+Big banks were more likely than smaller ones to impose a surcharge, according to the survey. Among the 300 largest banks, 53 percent of ATMs had a fee while only 40 percent of smaller bank ATMs and 6 percent of credit union ATMs charged a fee.
+That could raise antitrust law implications if large banks banded together to impose fees and drive smaller competitors out of business, Mierzwinski charged. "Not only are big banks using their monopoly muscle to punish consumers with higer fees, but their strategy is to use the surcharge to hurt small banks and credit unions as well," he said.
+Customers of small banks, which have fewer of their own ATMs, would likely have to pay a surcharge more often.
+Banks say free-market competition is functioning properly. "Competitions is already keeping ATM pricing in check," the ABA said.
+The consumer group said it surveyed 860 ATMs chosen at random in 27 states and the District of Columbia. The highest rates of surcharging were in the South, with 93 percent of Texas ATMs imposing a surcharge, 95 percent in Georgia, and 88 percent in Viginia and North Carolina, the group said.
+((--202-898-8312))
+The number of banks charging non-customers for using their automated teller machines doubled over the past six months, a consumer watchdog group said Tuesday.
+About 45 percent of ATMs added the controversial surcharge, on top of the fee most consumers already pay their own banks for using another bank's machine, up from 23 percent in October, according to a survey by U.S. Public Interest Research Group.
+The non-profit consumer advocacy group also found that the average fee had risen 20 percent to $1.15 from 96 cents.
+"Banks aren't earning money the old-fashioned way. Instead, they're gouging consumers," Edmund Mierzwinski, programme director for the group, told a press conference.
+Two states, Connecticut and Iowa, have banned the practice of charging non-customers and 12 other states, along with the federal government, are considering similar legislation.
+Mierzwinski endorsed those efforts and said consumers should avoid using machines that impose a surcharge.
+The rise in fees followed a decision one year ago by the two largest ATM networks, Visa's Plus and Mastercard's Cirrus, to lift a prohibition on surcharges.
+Banks defended the practice and said the additional fees helped pay for ATMs in new locations.
+"The marketplace should decide the prices for ATMs, not the government," the American Bankers Association said in a statement. "Price controls will only inhibit innovation and put a halt to future ATM growth."
+Banks added almost 17,000 new ATMs last year, a 13 percent increase, according to a survey by the publication Bank Network News. With surcharges now permitted, "ATM growth is accelerating," editor Don Davis said. "It's a better business to be in, so more people are getting in."
+Big banks were more likely than smaller ones to impose a surcharge, according to the survey. Among the 300 largest banks, 53 percent of ATMs had a fee while only 40 percent of smaller bank ATMs and 6 percent of credit union ATMs charged a fee.
+That could raise antitrust law implications if large banks banded together to impose fees and drive smaller competitors out of business, Mierzwinski charged. "Not only are big banks using their monopoly muscle to punish consumers with higer fees, but their strategy is to use the surcharge to hurt small banks and credit unions as well," he said.
+Customers of small banks, which have fewer of their own ATMs, would likely have to pay a surcharge more often.
+Banks say free-market competition is functioning properly. "Competitions is already keeping ATM pricing in check," the ABA said.
+The consumer group said it surveyed 860 ATMs chosen at random in 27 states and the District of Columbia. The highest rates of surcharging were in the South, with 93 percent of Texas ATMs imposing a surcharge, 95 percent in Georgia, and 88 percent in Viginia and North Carolina, the group said.
+The rapidly evolving market for stored-value cards could be hurt by premature government regulation, one of the top U.S. bank regulators said in a report issued Wednesday.
+An array of companies, including banks, credit card networks and others, are trying to popularize stored value or "smart" cards that carry electronic currency. But the cards have yet to catch on with consumers.
+Federal Reserve Board, which regulates banks and runs the payment system used to tranfer hundreds of billions of dollars a day among financial institutions, evaluated possible regulation of smart cards under the Electronic Fund Transfer Act.
+"Early regulation of electronic stored-value products could cause higher regulatory costs than later regulation," the Fed said in its report. Regulations could be costly for smart card providers and might arbitrarily favor one type of product over another, the Fed said.
+"Given the limited experience with stored value products to date, it is difficult to assess the extent to which the benefits to consumers from any particular Regulation E provision would outweigh the corresponding costs of compliance," the report noted.
+Regulation E sets out the Fed's rules for electronic funds transfers, including protecting consumers against fraudulent or mistaken transfers.
+Sen Bob Bennett, chairman of the Senate banking Committee's subcommittee on financial services and technology who criticized an initial Fed plan to regulate smart cards, welcomed the report.
+"For the first time, the Federal Reserve has carefully considered the cost of action as well as the potential cost of inaction with regard to the implementation of new regulations on the fledgling stored-value card industry," the Utah Republican said.
+Last April, the Fed had proposed applying some parts of the funds transfer act to smart cards. But Bennett and others in Congress opposed that move and passed legislation requiring a report before any action was taken.
+Early regulation could have some benefits, however, the Fed said. Government rules have "the potential to speed up development by promoting standardization and by removing uncertainty."
+In any event, the market will probably grow slowly, the Fed predicted. "Widespread public acceptance of stored-value products, if it occurs at all, will likely develop slowly over many years," the report said. "Their introduction seems unlikely to change the fundamental nature of our current payment system in the near future."
+David Jung, senior analyst at the market research firm Killen &amp; Associates, agreed. "We expect solid growth of about 25 percent a year but we don't see any break-out yet," Jung said.
+Volume of smart card transaction is expected to grow from under one billion transactions this year to about 10 billion worldwide in 2001, Jung said.
+Fairly soon, smart cards could be used to pay for everything from parking meters to magazines published on the Internet, Jung said.
+((202-898-8312))
+As a new class of financial derivative based on credit risk continues to grow in popularity, U.S. banking regulators are still pondering how to best assess the sometimes complex instruments.
+Most derivatives, financial instruments whose value is based on or "derived from" the value of something else, are linked to interest rates or currencies. Credit derivatives are based on the value of loans, bonds or other lending vehicles.  
+"I think, inevitably, the regulators, the lawyers and the accountants tend to be reacting to market developments and, to an extent, trying to keep up," William Kroener, general counsel of the Federal Deposit Insurance Corp, said Friday at a symposium sponsored by the agency.
+Last August, bank regulators issued preliminary guidance to bank examiners concerning credit derivatives. The guidance emphasized that banks should have policies in place describing how they intend to manage the risks incurred from credit derivatives.  
+Regulators also asked banks to clearly list credit derivative activity in their call reports instead of lumping the deals into bigger derivative categories such as interest rate swaps.
+But regulators are likely to revise the guidance and are still considering perhaps the most critical issue, the amount of capital a bank must set aside against its credit derivative portfolio.
+"The real issue is whether a credit derivative is different than other loans," FDIC chairman Ricki Helfer said at the symposium.  
+"Our challenge is to identify the risks embedded in credit derivatives and establish appropriate standards for those risks -- including appropriate capital requirements under the Basle risk-based capital accord," Helfer said.
+Like other derivatives, credit products can be used to limit or reduce risks taken by banks, regulators said.
+"They have great potential to enhance the management of credit risk," Christine Cumming, senior vice president in the bank supervison group of the Federal Reserve Bank of New York, said at the symposium. "And the better you can manage credit risk the better you can manage all of a bank's risks."  
+So far, regulators see credit derivatives as analagous to letters of credit, Cumming said. When a bank issues a letter of credit, it promises to make good on a loan or bond if the original borrower defaults.
+"The capital issue of course is the most important in the sense that it has a dollars and cents implication for banking institutions involved in this market," Cumming said.
+Market innovations could make easier the task of tracking credit risk and assessing capital standards, industry participants said.  
+J.P. Morgan &amp; Co unveiled a product on Thursday called "Creditmetrics," which is designed to help banks and others better measure and manage credit risk both on derivatives and on ordinary bonds and loans.
+"It is only if we can promote better understanding of credit risks in a portfolio framework that we will be able to generate greater transparency of credit risk, and ultimately, greater liquidity in the credit markets," Blythe Masters, head of global credit derivatives at the bank, said.
+CreditMetrics is also meant to "kick-start or set forward the dialogue we have with bank regulators," Masters said. "One of the perhaps most obvious applications of the CreditMetrics framework is a move towards a more risk-driven allocation of economic and potentially regulatory capital for credit risky instruments, including potentially credit derivatives."
+((--202-898-8312))
+The merger of Bankers Trust New York Corp. and Alex. Brown Inc. sends a clear signal to Congress that the nation's banking laws enacted during the Depression have fallen hopelessly behind market trends.
+"It's another example of the kind of progress that is being made in the market," said Karen Shaw Petrou, president of the consulting firm ISD/Shaw. "The industry is modernizing even if Congress is lagging on modernization legislation."
+Legislators have argued for more than a decade about repealing the Glass-Steagall Act of 1933 -- enacted in the wake of the stock market crash of 1929 -- which prohibits banks from offering other financial services like securities or insurance.
+The debate is still raging in Congress, but this time around the market may exert more influence. In the last year, federal courts and bank regulators have substantially diminished Glass-Steagall's reach.
+"This is the most profound example that Glass-Steagall is no longer on life-support systems; it's dead," said Larry LaRocco, a bank industry lobbyist and former congressman. "Now we need to move on and deal with the other issues."
+In Congress, lawmakers involved in drafting bank reform legislation said they had received the market's message.
+"This proposed merger simply underscores the need for timely Congressional action," House Banking Committee chairman Jim Leach, R.-Iowa, said.
+The ranking Democrat on the Banking Committee, Texas Rep. Henry Gonzalez, said the safety and soundness of the banking system could be jeopardized by ad hoc mergers.
+"As it is today, it is only a matter of luck that restructuring deals like this will truly serve the best interests of the market and the people who depend on it," Gonzalez said. "Congress can't afford to do nothing and hope that everything will be all right."
+One of the biggest controversies to be addressed is whether banks should be allowed to combine with non-financial commercial firms, said LaRocco, who is managing director at the American Bankers Association's Securities Association.
+Bankers Trust said Sunday it would acquire Baltimore-based Alex. Brown in a stock deal valued at $1.7 billion.
+In acquiring Alex. Brown, Bankers Trust was taking advantage of a move by the Federal Reserve last December to more than double the amount of revenue a bank securities subsidiary could earn without running afoul of Glass-Steagall Act.
+Bankers Trust Chief Executive Officer Frank Newman told reporters Monday that after the acquisition securities activity would constitute about 20 percent of revenues on a pro forma, or estimated, basis. That would have exceeded the previous cap of 10 percent but is permissable under the revised 25 percent cap.
+Fed officials declined to comment on the merger.
+The merger also benefited from Fed actions to eliminate previously required barriers, known as firewalls, separating a bank from its securities subsidiary.
+Removing the firewalls allowed banks to cut costs by eliminating duplication between the two activities while allowing additional benefits from the combination.
+The relaxation of firewalls has drawn some criticism from Congress, where Sen. Lauch Faircloth, chairman of the Senate Banking Committee's Financial Institutions subcommittee, held a hearing questioning the move.
+But the North Carolina Republican now seems satisfied with most of what the Fed has done or proposed. "We're going to entrust to the Fed that they'll continue to do the prudent thing," Faircloth's legislative director James Hyland said.
+Faircloth's remaining concerns center on two of the 28 firewall reforms proposed by the Fed in January, allowing a bank to buy investments underwritten by its securities firm for its own trust accounts and lending money to an investor to purchase underwritten securities, Hyland said.
+The merger of Bankers Trust New York Corp. and Alex. Brown Inc. sends a clear signal to Congress that the nation's banking laws enacted amid the Depression have fallen hopelessly behind market trends.
+"It's another example of the kind of progress that is being made in the market," said Karen Shaw Petrou, president of the consulting firm ISD/Shaw. "The industry is modernising even if Congress is lagging on modernisation legislation."
+Legislators have argued for more than a decade about repealing the Glass-Steagall Act of 1933 -- enacted in the wake of the stock market crash of 1929 -- which prohibits banks from offering other financial services like securities or insurance.
+The debate is still raging in Congress, but this time around the market may exert more influence. In the last year, federal courts and bank regulators have substantially diminished Glass-Steagall's reach.
+"This is the most profound example that Glass Steagall is no longer on life-support systems; it's dead," said Larry LaRocco, a bank industry lobbyist and former congressman. "Now we need to move on and deal with the other issues."
+One of the biggest controversies to be addressed is whether banks should be allowed to combine with non-financial commercial firms, said LaRocco, who is managing director at the American Bankers Association's Securities Association.
+Bankers Trust said Sunday it would acquire Baltimore-based Alex. Brown in a stock deal valued at $1.7 billion.
+In acquiring Alex. Brown, Bankers Trust was taking advantage of a move by the Federal Reserve last December to more than double the amount of revenue a bank securities subsidiary could earn without running afoul of Glass-Steagall's Section 20.
+Bankers Trust Chief Executive Officer Frank Newman told reporters Monday that after the acquisition securities activity would constitute about 20 percent of revenues on a pro forma, or estimated, basis. That would have exceeded the previous cap of 10 percent but is permissable under the revised 25 percent cap.
+Section 20 says a nonbank subsidiary of a bank holding company may not be "principally engaged" in non-permitted securities activity. Since 1987, the Fed has interpreted that to allow bank subsidiaries to do a limited amount of dealing and underwriting in a wide range of securities, including corporate stocks and bonds.
+The law already permitted banks to deal in certain kinds of securities such as Treasury bonds and general obligation municipal bonds.
+Initially, the Fed ruled that a subsidiary that derived less than 5 percent of its revenue from securities was permissible. In 1989, the cap was raised to 10 percent and in December the cap was raised to 25 percent effective March 6.
+Fed officials declined to comment on the merger.
+The merger also benefited from Fed actions to eliminate previously required barriers, known as firewalls, separating a bank from its securities subsidiary.
+"While the deal wouldn't have been do-able at all without the revenue limit change, from a profitability standpoint the changes in the firewalls that have been made and have been announced are quite important as well," consultant Petrou said.
+Removing the firewalls allowed banks to cut costs by eliminating duplication between the two activities while allowing additional benefits from the combination.
+The relaxation of firewalls has drawn some criticism from Congress, where Sen. Lauch Faircloth, chairman of the Senate Banking Committee's Financial Institutions subcommittee, held a hearing questioning the move.
+But the North Carolina Republican now seems satisfied with most of what the Fed has done or proposed. "We're going to entrust to the Fed that they'll continue to do the prudent thing," Faircloth's legislative director James Hyland said.
+Faircloth's remaining concerns centre on two of the 28 firewall reforms proposed by the Fed in January, allowing a bank to buy investments underwritten by its securities firm for its own trust accounts and lending money to an investor to purchase underwritten securities, Hyland said.
+The U.S. government is scrambling to update thousands of computer systems and software programmes that might otherwise see January 1, 2000 as "00" and think they are operating in 1900.
+"We are confident that all of the major systems will be fixed," said Sally Katzen, who is coordinating much of the repair effort from her post as administrator of the Office of Information and Regulatory Affairs in the Office of Management and Budget.
+"That is what we are setting out to do and that is what we will do," she pledged in an interview.
+Legislators in Congress have also taken an interest in the subject and prodded agencies into action. Most are well aware of the problem, congressional staff say, although a few slackers including the air traffic control system are raising concerns.
+"Congress is sounding the alarm and will keep sounding it until this problem is solved," Representative Steve Horn told Reuters.
+Horn, chairman of the Government Reform Committee's Management, Information and Technology sub-committee, has taken testimony from a variety of government and private-sector experts on the year 2000 problem.
+"I have learned that the real challenge it poses is to management," Horn said. "Software experts are capable of fixing the problem but can management understand what is at stake, make it a priority, organise a plan and allocate resources so the technical experts can do their job?"
+GOVERNMENT AGENCIES READY TO ADJUST FOR MILLENNIUM
+The sub-committee surveyed government agencies about year 2000 awareness last year and responses to an updated survey have just come in. The latest survey found that all agencies are aware of the problem and most are ready to put in place the needed fixes, a congressional staffer said.
+Some of the agencies that people are most concerned about, the Defence Department and the Social Security Administration, appear to be in good shape and have extensive plans to fix the problem well before December 31, 1999.
+At the Defence Department, "we are treating it much as we would a computer virus," Assistant Secretary of Defence Emmett Paige told Horn's sub-committee.
+Although weapons systems are not set to launch automatically by computers, problems could crop up when the weapons interact with command and control systems that are operated by computers, congressional staffers explained.
+During the Gulf War, a command and control system that was scheduled to run for 12 hours began shutting down weapon systems it was in contact with after running a few hours past its deadline.
+"That would obviously be a disaster, but they're working on it," said one staffer.
+Social security is also a primary focus of concern, but for more political reasons. Millions of voters depend on their social security cheques for meeting basic living expenses. If the cheques were delayed or cancelled, Congress would probably be inundated with thousands of complaints.
+"They started the earliest but they have a lot to do and still aren't finished," a staffer said. "My sense is that they will be fine."
+CONCERN OVER AVIATION
+One agency of concern, according to congressional staffers, is the Federal Aviation Administration, which operates the country's air traffic control system and inspects commercial airplanes.
+"The Department of Transportation is very worrisome," one staffer said. "The FAA is still in the assessment phase. That's the one that's a real concern."
+The agency cannot give an estimate of how many lines of code it has that must be changed, or how much that might cost, until it completes an assessment expected by the end of May, according to Mary Powers-King, who heads the FAA's information technology effort.
+"It's somewhat painful because no new funding has been appropriated and we're having to reprogramme to absorb the activity," Powers-King said. "That is a big part of the reason why we started late. We've got that figured out now and we've got to just bite the bullet."
+Overall, recent estimates indicate the federal government will need to spend $2.4 to $2.5 billion to identify and correct year 2000 computer problems, Katzen said. The estimate has risen slightly from about $2.3 billion a few months ago.
+"I wouldn't be surprised to see them come another ($100 to $300 million) as we continue through the process of assessment," Katzen said. "But I think that we've got it in just about the right ballpark."
+In a February 7, 1997 report to Congress, the budget office projected that the military needed the largest portion of the money for updates. The Air Force would require $371 million, the Army $218 million, the Navy $90 million and other defence-related areas $291 million.
+Other big spenders in the report were the Treasury Department, needing $319 million, and the Veterans Administration, needing $144 million.
+There will be many more places to hang your hat in cyberspace soon, thanks to a plan adopted by the Internet Society and a host of other groups, the society announced Tuesday.
+The group, which helps develop and coordinate Internet standards, said the plan would provide seven new top-level domains, the last three letters at the end of every electronic mail or Web site address.
+Computer maker Digital Equipment Corp., telecommunications company MCI Communications Corp. and UUNET Technologies Inc., a unit of Worldcom Inc., endorsed the plan, first unveiled in February, the society said.
+The plan also has been endorsed by the Internet Assigned Numbers Authority, the central coordinator of Internet addresses and other standards operating under a charter from the society and the Federal Network Council.
+The International Telecommunications Union, World Intellectual Property Organization and International Trademark Association backed the plan as well, the society said.
+Under the plan, new domain names such as "firm," "arts," and "web" will be added to the existing top-level domains such as "com," "net," and "org" starting in the third quarter of 1997, the society said.
+The plan establishes an arbitration and mediation procedure for resolving disputes over names, such as when a trademarked name is used in an Internet address.
+Last year, for example, toymaker Hasbro Inc. won a lawsuit to regain control of the address "candyland.com," which was being used for an adult Web site with nude photographs. But more complex disputes arise when both parties may have a legitimate claim to an address name.
+"Responsible self-governance is the key factor in assuring that the Internet will reach its fullest potential," Internet Society President Donald Heath said.
+Although other groups have tried to establish alternate domain names, they have not succeeded in persuading the vast majority of Internet service providers to add their new names to the computers that route information across the network.
+The Internet Society plan met the needs of major providers.
+"The Internet is growing up rapidly and it is vital that the processes, procedures and policies that define its adminstration be sound, stable and sustainable in an international setting," MCI Senior Vice President Vincent Cerf said.
+MCI is a top operator of the Internet's backbone network.
+Currently, one company, Network Solutions Inc., registers addresses under most existing top-level domains under a contract with the National Science Foundation. Under the plan, up to 28 new registration agents will be chosen in a process overseen by the Big Six accounting firm Arthur Andersen.
+But Network Solutions Senior Vice President Don Telage said having so many registrars would create chaos on the Net.
+"This plan risks the stability of the Internet," he said.
+The current system functions "pretty well" without international arbitration procedures, Telage said, noting his company has registered 1.2 million addresses and been sued only 26 times.
+Herndon, Va.-based Network Solutions will come out with its own plan soon for reforming the domain name registration system, Telage added.
+While Network Solutions charges $100 for a two-year registration, the new firms will be free to compete on price. All names will be maintained in a central, shared database.
+Once Network Solution's contract with the National Science Foundation expires, the top-level domains it registers will be opened to all the other registry agents.
+A broad range of Internet companies and organizations will gather in Geneva at the end of April to add their formal endorsements on a memorandum of understanding, Heath said.
+There may be many more places to hang your hat in cyberspace soon, thanks to a plan adopted by the Internet Society and a host of other groups, the society announced Tuesday.
+But while some major Internet companies immediately endorsed the plan, online services providers gave it a cool reception.
+The Internet Society, which helps develop and coordinate Internet standards, said the plan would provide seven new top-level domains, the last three letters at the end of every electronic mail or Web site address.
+New domain names such as "firm," "arts," and "web" will be added to existing top-level domains such as "com," "net," and "org" starting in the third quarter of 1997, the society said.
+Computer maker Digital Equipment Corp., telecommunications company MCI Communications Corp. and UUNET Technologies Inc., a unit of Worldcom Inc., endorsed the plan, first unveiled in February, the society said.
+But America Online Inc., the largest online service in the world with more than 8 million members, said some details still needed to be worked out.
+"We are still studying the proposal," said William Burrington, director of law and public policy at America Online. While praising the plan's concept, Burrington said he thought "it still needs some more work." The company hopes to craft a better plan "that is more saleable," he added.
+The largest "pure Internet" service provider, AT&amp;T Corp.'s Worldnet service, was equally unenthusiastic. "We are still looking at these domain names," spokesman Mike Miller said. "We are studying them."
+The plan also has been endorsed by the Internet Assigned Numbers Authority, the central coordinator of Internet addresses and other standards operating under a charter from the society and the Federal Network Council.
+The plan also establishes an arbitration and mediation procedure for resolving disputes over names, such as when a trademarked name is used in an Internet address.
+Last year, for example, toymaker Hasbro Inc. won a lawsuit to regain control of the address "candyland.com," which was being used for an adult Web site with nude photographs. But more complex disputes arise when both parties may have a legitimate claim to an address name.
+"Responsible self-governance is the key factor in assuring that the Internet will reach its fullest potential," Internet Society President Donald Heath said.
+Although other groups have tried to establish alternate domain names, they have not succeeded in persuading the vast majority of Internet service providers to add their new names to the computers that route information across the network.
+The Internet Society plan better meets the needs of major providers, supporters said.
+"The Internet is growing up rapidly and it is vital that the processes, procedures and policies that define its adminstration be sound, stable and sustainable in an international setting," MCI Senior Vice President Vincent Cerf said.
+MCI is a top operator of the Internet's backbone network.
+Currently, one company, Network Solutions Inc., registers addresses under most existing top-level domains under a contract with the National Science Foundation. Under the plan, up to 28 new registration agents will be chosen in a process overseen by the Big Six accounting firm Arthur Andersen.
+But Network Solutions Senior Vice President Don Telage said having so many registrars would create chaos on the Net.
+"This plan risks the stability of the Internet," he said.
+The current system functions "pretty well" without international arbitration procedures, Telage said, noting his company has registered 1.2 million addresses and been sued only 26 times.
+Herndon, Va.-based Network Solutions will come out with its own plan soon for reforming the domain name registration system, Telage added.
+The largest online services providers reacted cautiously to a plan announced Tuesday that would vastly expand the number of possible address names on the Internet.
+Internet Society, which helps develop standards on the global computer network, said it had approved a plan to add seven new top-level domains, the last three letters at the end of every electronic mail or Web site address.
+While some major Internet companies endorsed the plan, online service providers gave it a cool reception.  
+"We are still studying the proposal," said William Burrington, director of law and public policy at America Online Inc. While praising the plan's concept, Burrington said he thought "it still needs some more work."
+America Online, the largest online service in the world with more than eight million members, hopes to craft a better plan "that is more saleable," he added.
+The largest pure Internet service provider, AT&amp;T Corp's Worldnet service, was equally unenthusiastic. "We are still looking at these domain names," spokesman Mike Miller said.  
+"We are studying them, trying to better understand what it means for our business," Miller added.
+Under the plan, new domain names such as "firm," "arts," and "web" will be added to the existing top-level domains such as "com," "net" and "org" starting in the third quarter of 1997, the society said.
+But online service providers will seek to delay implementation of the plan, officials said. "It's not ready for prime time," one official said. "We have been approached by other providers, and we're going to try and come up with something."
+The plan establishes an arbitration and mediation procedure for resolving disputes over names, such as when a trademarked name is used in an Internet address.
+Several net organizations, along with computer-maker Digital Equipment Corp, telecommunications company MCI Communications Corp and UUNET Technologies Inc., a unit of WorldCom Inc, immediately endorsed the plan, first unveiled in February.
+Any delay would likely please Herndon, Va.-based Network Solutions Inc. The company is the sole registration agent for the most popular current domains, including "com" and "net."  
+Under the plan, the domain names registered by Network Solution will be registered jointly by all registration agents once the company's contract with the National Science Foundation expires.
+Network Solutions, which has spoent millions of dollars on its set-up, pledged that would never happen. "We have no intent of opening up our registry to others upon expiration," spokesman Christoper Clough said.
+The Internet Society plan is also opposed by a group that has tried to create on its own informal system of new top-level domains. Less than one percent of the computers that route traffic on the Internet recognize names registered with the informal group, which recently began calling itself the Enhanced Domain Name Service.
+Karl Denninger, the group's founder and president of a small Internet provider in Illinois called MCSNet, pledged to boycott any companies that go along with the Internet Society's plan.
+"I'm not going to pay anybody who doesn't pay attention to my interests," Denninger said. "You can vote with your wallet."
+((--202-898-8312))
+There will be many more places to hang your hat in cyberspace soon, thanks to a plan adopted by the Internet Society and a host of other groups, the society announced Tuesday.
+The group, which helps develop and coordinate Internet standards, said the plan would provide seven new top-level domains, the last three letters at the end of every electronic mail or Web site address.
+Computer maker Digital Equipment Corp., telecommunications company MCI Communications Corp. and UUNET Technologies Inc., a unit of Worldcom Inc., endorsed the plan, first unveiled in February, the society said.
+The plan also has been endorsed by the Internet Assigned Numbers Authority, the central coordinator of Internet addresses and other standards operating under a charter from the society and the Federal Network Council.
+The International Telecommunications Union, World Intellectual Property Organisation and International Trademark Association backed the plan as well, the society said.
+Under the plan, new domain names such as "firm," "arts," and "web" will be added to the existing top-level domains such as "com," "net," and "org" starting in the third quarter of 1997, the society said.
+The plan establishes an arbitration and mediation procedure for resolving disputes over names, such as when a trademarked name is used in an Internet address.
+Last year, for example, toymaker Hasbro Inc. won a lawsuit to regain control of the address "candyland.com," which was being used for an adult Web site with nude photographs. But more complex disputes arise when both parties may have a legitimate claim to an address name.
+"Responsible self-governance is the key factor in assuring that the Internet will reach its fullest potential," Internet Society President Donald Heath said.
+Although other groups have tried to establish alternate domain names, they have not succeeded in persuading the vast majority of Internet service providers to add their new names to the computers that route information across the network.
+The Internet Society plan met the needs of major providers.
+"The Internet is growing up rapidly and it is vital that the processes, procedures and policies that define its adminstration be sound, stable and sustainable in an international setting," MCI Senior Vice President Vincent Cerf said.
+MCI is a top operator of the Internet's backbone network.
+Currently, one company, Network Solutions Inc., registers addresses under most existing top-level domains under a contract with the National Science Foundation. Under the plan, up to 28 new registration agents will be chosen in a process overseen by the Big Six accounting firm Arthur Andersen.
+But Network Solutions Senior Vice President Don Telage said having so many registrars would create chaos on the Net.
+"This plan risks the stability of the Internet," he said.
+The current system functions "pretty well" without international arbitration procedures, Telage said, noting his company has registered 1.2 million addresses and been sued only 26 times.
+Herndon, Va.-based Network Solutions will come out with its own plan soon for reforming the domain name registration system, Telage added.
+While Network Solutions charges $100 for a two-year registration, the new firms will be free to compete on price. All names will be maintained in a central, shared database.
+Once Network Solution's contract with the National Science Foundation expires, the top-level domains it registers will be opened to all the other registry agents.
+A broad range of Internet companies and organisations will gather in Geneva at the end of April to add their formal endorsements on a memorandum of understanding, Heath said.
+The U.S. government is scrambling to update thousands of computer systems and software programmes that might otherwise see Jan. 1, 2000, as "00" and think they are operating in 1900.
+"We are confident that all of the major systems will be fixed," said Sally Katzen, who is coordinating much of the repair effort from her post as administrator of the Office of Information and Regulatory Affairs in the Office of Management and Budget.
+"That is what we are setting out to do and that is what we will do," she pledged in an interview.
+Legislators in Congress have also taken an interest in the subject and prodded agencies into action. Most are well aware of the problem, congressional staff say, although a few slackers, including the air traffic control system, are raising concerns.
+"Congress is sounding the alarm and will keep sounding it until this problem is solved," Representative Steve Horn said in an interview.
+Horn, chairman of the Government Reform Committee's Management, Information and Technology subcommittee, has taken testimony from a variety of government and private-sector experts on the year 2000 problem.
+"I have learned that the real challenge it poses is to management," Horn said. "Software experts are capable of fixing the problem, but can management understand what is at stake, make it a priority, organise a plan and allocate resources so the technical experts can do their job?"
+The subcommittee surveyed government agencies about year 2000 awareness last year and responses to an updated survey have just come in. The latest survey found that all agencies are aware of the problem and most are ready to put the needed fixes in place, a congressional staffer said.
+Some of the agencies that people are most concerned about, the Defence Department and the Social Security Administration, appear to be in good shape and have extensive plans to fix the problem well before Dec. 31, 1999.
+At the Defence Department, "we are treating it much as we would a computer virus," Assistant Secretary of Defence Emmett Paige told Horn's subcommittee.
+Although weapons systems are not set to launch automatically by computers, problems could crop up when the weapons interact with command and control systems that are operated by computers, congressional staffers explained.
+During the Gulf War, a command and control system that was scheduled to run for 12 hours began shutting down weapon systems it was in contact with after running a few hours past its deadline.
+"That would obviously be a disaster, but they're working on it," said one staff member.
+Social Security is also a primary focus of concern, but for more political reasons. Millions of voters depend on their Social Security checks for meeting basic living expenses. If the checks were delayed or cancelled, Congress would probably be inundated with thousands of complaints.
+"They started the earliest but they have a lot to do and still aren't finished," a staff member said. "My sense is that they will be fine."
+One agency of concern, according to congressional staffers, is the Federal Aviation Administration, which operates the country's air traffic control system and inspects commercial airplanes.
+"The Department of Transportation is very worrisome," one staffer said. "The FAA is still in the assessment phase. That's the one that's a real concern."
+The agency cannot give an estimate of how many lines of code it has that must be changed or how much that might cost until it completes an assessment expected by the end of May, according to Mary Powers-King, who heads the FAA's information technology effort.
+"It's somewhat painful because no new funding has been appropriated and we're having to reprogram to absorb the activity," Powers-King said. "That is a big part of the reason why we started late. We've got that figured out now and we've got to just bite the bullet."
+Overall, recent estimates indicate the federal government will need to spend $2.4 to $2.5 billion to identify and correct year 2000 computer problems, Katzen said. The estimate has risen slightly from about $2.3 billion a few months ago.
+"I wouldn't be surprised to see them come another ($100 to $300 million) as we continue through the process of assessment," Katzen said. "But I think that we've got it in just about the right ballpark."
+In a Feb. 7, 1997, report to Congress, the budget office projected that the military needed the largest portion of the money for updates. The Air Force would require $371 million, the Army $218 million, the Navy $90 million and other defence-related areas $291 million.
+Other big spenders in the report were the Treasury Department, needing $319 million, and the Veterans Administration, needing $144 million.
+The Federal Reserve may not be taking adequate precautions to ensure that its technological systems and those of the banks it regulates will function properly in the year 2000, Senate Banking Committee chairman Alfonse D'Amato warned Monday.
+After querying U.S. bank regulators on the year 2000 computer issue in February, New York Republican D'Amato said he was troubled by the answers he received from the Fed and the National Credit Union Administration (NCUA).
+Problems are expected to crop up in computers and software that only record the last two digits of the year. Such a programme might treat the year 2000 as the year 1900, leading to serious miscalculations or even a system crash.
+D'Amato also queried in February the Office of the Comptroller, which oversees national banks, and the Federal Deposit Insurance Corp. Both entities told D'Amato they had detailed plans to cope with the so-called millennium bug.
+But D'Amato singled out responses of the Fed and the NCUA as raising concerns over whether they are "devoting enough attention and resources to solving the year 2000 crisis," D'Amato's office said in a release. D'Amato sent both agencies letters Monday asking for additional information.
+"Congress expects detailed plans and concrete actions to prevent possible future catastrophes which could endanger the financial well-being of hundreds of millions of Americans," D'Amato said. "We can't wait around, timing is critical."
+Estimates for fixing year 2000 problems in government and the private sector worldwide have ranged as high as $300 billion to $600 billion. Chase Manhattan Bank recently said in a routine filing it planned to spend $250 million on the problem over the next three years.
+"We have no comment," Fed spokesman Joe Coyne said Monday. "We will, of course, answer the letter."
+D'Amato said the Fed and the NCUA appeared to lack an aggressive plan of action for coping with the problem, failed to give an assessment about the scope of the problem in institutions they oversee, and did not explain how they would assist regulated institutions that might have a problem.
+The Fed, which operates the nation's payment system moving $1 trillion a day among financial institutions, also failed to describe any steps it had taken to ensure that its own systems would be ready for the year 2000, D'Amato said.
+The chairman of an influential National Research Council report on computer encoding technology said Thursday the report's year-old findings are still valid.
+Kenneth Dam, a law professor at the University of Chicago, told Reuters that an approach favored by the Clinton administration to allow government access to coded information is still not ready for widespread use despite advances in computer encryption.  
+Encryption, increasingly important for online commerce and global communications on the Internet, scrambles information and renders it unreadable without a password or software "key."
+The Clinton administration bars the export of strong encryption unless the products incorporate a feature known as key recovery which allows the government to decode messages by gaining access to the software keys.
+Such access is needed to catch criminals or terrorists who might be using encrypted communications, the administration argues.  
+But poorly designed key recovery systems might create new vulnerabilities by letting hackers get access to the keys as well, critics contend.
+Echoing the findings of last May's NRC report, Dam said key recovery is not sufficiently reliable yet.
+"It may be that one would have more confidence today than we did a year ago and still more next year," Dam told Reuters after speaking to a conference here sponsored by the Brookings and Cato Institutes. "It's not yet quite ready."  
+"The idea, which I stand by, is that one shouldn't require the implementation of key escrow even as part of some general infrastructure project until we're absolutely certain that we have not created a monster problem for ourselves," he said.
+The report also recommended that strict export controls on encryption, opposed by U.S. software makers, be progressively relaxed.
+Under a Clinton plan that took effect at the beginning of the year, companies may now export strong encryption products but only if they include key recovery. Companies promising to include key recovery within two years may export medium strength encryption.
+That continues to draw the ire of software makers and privacy advocates opposed to government snooping.
+Properly balancing the conflicting interests in the encryption debate is a difficult task, Dam conceded.
+"Law enforcement and national security concerns do conflict with individual privacy and the legitimate needs of business and with the international future of our software industry," he said in a speech to the conference.
+((--202-898-8312))
+A bill to protect homeowners from paying unneccessary mortgage insurance was passed overwhelmingly by the House of Representative Wednesday.
+By a vote of 421 to seven, the House adopted the Homeowners Insurance Protection Act that would cancel mortgage insurance once the homeowner has built up sufficient equity.
+"The truth is that a vast number of people are paying for insurance they no longer need," Representative Henry Gonzalez said during the debate on the bill. The Texas Democrat urged the Senate to quickly pass the measure.
+Consumer advocates say these policies cost homeowners millions of dollars a year.
+"I think it would be hard for the Senate to resist moving forward," Michelle Meier, counsel for government affairs at Consumers Union, said. The House vote "brings us really close to getting a final measure."
+But the mortgage insurance industry warned that the automatic cancellation proposal would raise the cost for loans with low downpayments.
+"Unfortunately, the bill has serious flaws that would impose unnecessary government mandates and controls on the industry," said Suzanne Hutchinson of the Mortgage Insurance Companies of America.
+Currently, mortgage lenders require a borrower to obtain and pay for such insurance when the borrower is making a relatively small down payment, such as 5 percent of the purchase price of a home.
+Borrowers putting down 20 percent or more of the purchase price generally are not required to obtain insurance, which can cost $300 to $900 a year.
+The bill would automatically cancel a mortgage insurance policy if the homeowner was current on mortgage payments and had built up 25 percent equity of the original house value.
+The bill would not not apply to existing mortgages. The new rules would cover only mortgages and refinancings closed a year after enactment.
+U.S. Commerce Department is forming a committee to advise the department on its controversial computer encryption export policy, Commerce officials said on Friday.
+The committee, which will be called the President's Export Council Subcommittee on Encryption, will be composed of about 25 members, drawn from state and local law enforcement agencies and the private sector, according to Sue Eckert, Assistant Secretary of Commerce for Export Administration.  
+But the committee is not intended as a forum to debate the merits of the current export policy, Eckert told Reuters.
+"This is not a debating forum towards policy in general," Eckert said in a telephone interview. "It is the advisory group to provide input to implementation of our policy."
+Current law restricts the export of encryption technology, computer programs that scramble information and render it unreadable without a password or software "key."  
+But many software companies, including Microsoft Corp and Netscape Communications Corp, oppose the export rules, which they say hamper sales abroad. And civil libertarians contend the export rules permit excessive governmental intrusions even within the United States.
+Under the current policy, in effect since the beginning of 1997, the Clinton administration permits companies to export powerful encryption programs but only if the products allow the government to crack the codes by gaining access to the software keys.  
+Companies can export medium-strength encryption if they promise to incorporate so-called key recovery features within two years.
+The committee is "to advise on the range of issues of implementation of key recovery...not just the technical issues, but also law enforcement and access," Eckert said.
+The administration was criticized by privacy advocates last month for drafting legislation that might allow easy government access to software keys without a court order.  
+While emphasizing that the committee was intended for law enforcement and corporate officials, Eckert said no groups would be excluded.
+"We haven't excluded anybody," she said. "That's why we published a notice in the Federal Register and advised everyone and anyone who's interested to submit their comments and suggestions."  
+The members of the committee will be selected by the Secretary of Commerce "to assure a balanced representation among the exporting community and those government agencies with a mandate to implement policy regarding encryption," the notice indicated.
+Eckert declined to predict when the committee would be appointed, but added "hopefully within a period of a couple of months it will be up and established."  
+The administration will not wait for the committee to rejigger its export policy on several fronts, Eckert said. A modest revision of current export rules will be issued "in a relatively short period," Eckert said, and a legislative proposal "in the next several weeks."
+The advisory committee would have input on future revisions, Eckert said.
+Opponents of the current policy said on Friday they continued to favor a legislative solution. Several bills are pending in Congress that would dramatically relax the export limits.
+"This subcommittee is not a bad thing, but it does not change the nature of the debate," Business Software Alliance spokeswoman Kim Willard said. "We still favor legislation."
+((202-898-8312))
+A bill to dramatically relax U.S. export controls on computer encoding technology will be considered by a House Judiciary subcommittee on Wednesday, congressional staff members said Monday.
+Heading for a vote, the bill garnered an endorsement from a politically diverse coalition of Internet privacy advocates.
+In a related development Netscape Communications Corp. said the Commerce Department gave the Internet software company permission to export some products containing stronger encoding, or encryption, features.
+Current U.S. laws strictly limit export of products with encryption, software that scrambles information and renders it unreadable unless one has a password or software "key."
+Netscape, which had been allowed to export encryption software with keys 40 bits long, said it will now be able to sell abroad products with 56-bit keys. The longer the key, the harder it is to crack an encoded message, and the 56-bit key makes it 65,000 times tougher to decode.
+The Security and Freedom through Encryption Act, sponsored by Virginia Republican Representative Robert Goodlatte, would allow U.S. companies to export strong encryption programmes if such products were being offered by foreign competitors.
+The Clinton administration opposes the legislation, which it argues would allow international criminals and terrorists to get easy access to encryption that could thwart law enforcement agencies' efforts.
+Under the adminstration's current policy, strong encryption can be exported only if it allows the government to crack the codes by recovering the software keys.
+Netscape has promised to abide by that policy, said its chief scientist, Taher Elgamal. Within two years, its products will allow the government to decode encrypted data by gaining access to the keys.
+If the bill is approved by the Courts and Intellectual Property subcommittee, the full Judiciary Committee will consider it, said David Lehman, legislative counsel for Goodlatte.
+The legislation will sail through the subcommittee and be voted on by the full committee in a few weeks, according to Shabbir Safdar, executive director of the Voters Telecommunications Watch, one of the groups endorsing the measure Monday.
+"It looks very promising with 78 co-sponsors," Safdar said. "This is the best hope in the House for real encryption reform this decade."
+Others who endorsed the bill included the Centre for Democracy and Technology, the Electronic Frontier Foundation and Americans for Tax Reform.
+A similiar bill is pending in the Senate, where the Commerce Committee is expected to vote on its version in the next few weeks.
+Not all civil libertarians favour the legislation as currently drafted. Another group, led by the American Civil Liberties Union, wrote Goodlatte this week asking him to delete a provision of the bill that would create new criminal penalties for using computer encryption "in the furtherance of the commission of a criminal offence."
+The group generally backed Goodlatte's efforts but said in its letter the new criminal penalties "could have a series of unintended consequences that would easily undermine the other desirable features of the bill."
+From the Internet community, signers included the Internet Society and two private companies, Cybercash Inc. and Digex Inc.
+Instead of criminalizing use of encryption, the group said prosecutors should rely on existing federal and state laws prohibiting obstruction of justice and concealment of evidence.
+Senator Bob Kerrey is preparing legislation in an attempt to break the deadlock over computer encryption export policy, people familiar with the Senator's plans said.
+Until now, the debate has pitted the Clinton administration, which favors strict export controls, against U.S. software companies and civil libertarians, who want to relax the export limits.
+Encryption programs scramble information and render it unreadable without a password or software "key."
+Legislation to dramatically relax U.S. export restrictions on computer encoding technology moved ahead on Wednesday as the House Judiciary Committee approved the measure.
+The bill, known as the Security and Freedom through Encryption Act, now goes to the House International Relations Committee where opponents hope to make their stand.
+Encryption, computer programs that scramble information and render it unreadable without a password or software "key," has become an essential component of global communications and electronic commerce over the Internet.  
+The Clinton administration has opposed the bill and a similiar measure in the Senate, arguing that allowing strong encryption out of the country will put it in the hands of international criminals and terrorists.
+Rep Bob Goodlatte, the bill's author, said he had spoken to administration officials on Tuesday and hoped a compromise could be reached.
+"We're very, very close in many areas," the Virginia Republican told reporters after the committee vote. "The export control issue is probably the area that we're still the furthest apart on."  
+Goodlatte's bill would also write into law the current policy of allowing unrestricted domestic use of encryption.
+But the bill would criminalize the use of encryption to conceal information related to the commission of a felony.
+That provision came on an amendment from Massachusetts Democrat Rep. William Delahunt which replaced a broader criminalization provision included in the original bill.
+The committee also approved an amendment requiring law enforcement officials to compile statistics for Congress on the use of encryption by criminals.  
+Software industry officials and privacy advocates, who have strongly opposed the export limits, urged lawmakers to continue moving the legislation forward.
+The International Relations Committee "will have a go at it but it's great to have some momentum," Netscape Communications Corp's public policy counsel Peter Harter told Reuters after the vote. "We've come a long way in a very short period of time. This legislation is moving at Internet time."
+Jonah Seiger, communications director at the Center for Democracy and Technology, said the vote was a "historic moment."
+"The Judiciary Committee agreed that the administration has the wrong policy sending a very clear signal that we need to change direction," Seiger said.
+Before the vote, committee chairman Henry Hyde of Illinois prohibited amendments to the bill on the controversial export section. Hyde said the export section fell under the jurisdiction of the International Relations Committee.
+Legislation to dramatically relax U.S. export restrictions on computer encoding technology moved ahead on Wednesday as the House Judiciary Committee approved the measure.
+The bill, known as the Security and Freedom through Encryption Act, now goes to the House International Relations Committee where opponents plan to make their stand.
+Encryption, computer programmes that scramble information and render it unreadable without a password or software "key," has become an essential component of global communications and electronic commerce over the Internet.
+The Clinton administration has opposed the bill and similiar measures in the Senate, arguing that allowing strong encryption out of the country will put it in the hands of international criminals and terrorists.
+Representative Bob Goodlatte, the bill's author, said he had spoken to administration officials on Tuesday and hoped a compromise could be reached.
+"We're very, very close in many areas," the Virginia Republican told reporters after the committee vote. "The export control issue is probably the area that we're still the furthest apart on."
+Goodlatte's bill would also write into law the current policy of allowing unrestricted domestic use of encryption.
+The bill would criminalize the use of encryption to conceal information related to the commission of a felony. That provision came on an amendment from Massachusetts Democrat Representative William Delahunt which replaced a broader criminalization provision included in the original bill.
+The committee also approved an amendment requiring law enforcement officials to compile statistics for Congress on the use of encryption by criminals.
+Software industry officials and privacy advocates, who have strongly opposed the export limits, urged lawmakers to continue moving the legislation forward.
+The International Relations Committee "will have a go at it but it's great to have some momentum," Netscape Communications Corp. public policy counsel Peter Harter said after the vote. "We've come a long way in a very short period of time. This legislation is moving at Internet time."
+Jonah Seiger, communications director at the Centre for Democracy and Technology, said the vote was a "historic moment."
+"The Judiciary Committee agreed that the administration has the wrong policy sending a very clear signal that we need to change direction," Seiger said.
+Before the vote, committee Chairman Henry Hyde of Illinois prohibited amendments to the bill on the controversial export section. Hyde said the export section fell under the jurisdiction of the International Relations Committee.
+Former Federal Reserve chairman Paul Volcker on Wednesday tangled with lawmakers who opposed his view that banks should not be allowed to combine with commercial companies.
+But neither side broke much new ground in the debate, one of the hottest controversies remaining as Congress tries to overhaul ageing U.S. financial laws.
+Volcker may have set the tone when he began his remarks to the House Banking Committee by observing that he delivered almost the identical testimony at a similiar hearing in 1991.
+"I could read that statement word-for-word and it would be totally relevant" on most issues being discussed, he said.
+Volcker, a long-time opponent of mixing commerce and banking, pointed to recent experiences in Japan and Germany.
+"I do not think that today many observers look to Germany or Japan for a model of an effective, innovative banking system," he said, "Quite the contrary."
+That suited committee chairman Jim Leach, Republican of Iowa, also a longtime opponent of mixing banking and commerce. Rep. Doug Bereuter, Republican of Nebraska, announced at the hearing he would oppose such combinations.  
+But advocates of legislation allowing some mixing questioned Volcker's evidence and conclusions.
+Rep. Richard Baker, who has introduced a bill to allow unlimited mixing, said banks had been permitted to combine with commercial firms for most of U.S. history.
+"This reflects that there is no principle or meaningful distinction between commerce and finance," the Louisiana Republican said.
+Baker noted that Bankers Trust New York Corp, where Volcker sits on the board of directors, reported a profit of $62 million last year on an equity investment in an airline, asking: "Isn't that an investment in a commercial enterprise?"
+"Banks are able to hold some equity investment in the course of underwriting and in the course of merchant banking, and Bankers Trust has done so at times," Volcker responded. "Had they extended beyond that, they would have one director who would protest."
+Banks cannot hold a controlling stake in a commercial firm, Volcker added.
+When Baker suggested that lawmakers would put similar limits on commercial holdings at consolidated financial firms, referred to as a basket approach, Volcker disagreed.  
+One bill under consideration would allow financial firms to conduct 25 percent of their business in non-financial endeavors, although legislators have also discussed basing the basket limit on total capital as opposed to business activity.
+The ban on control "is not a basket at all, it is a non- controlling interest and if it reached the point where it affected the fortunes of the bank, I'd worry about," Volcker said.
+Later, Rep. Tom Campbell, Republican of California, said he was leaning towards allowing combinations of banks and commercial firms.
+Representatives of the securities and insurance industries testified after Volcker and most favored allowing banking and commerce to mix.
+"Such combinations are today part of the normal course of business for Merrill Lynch as well as other companies in our industry here in the U.S. and around the world," John Heinmann, the firm's chairman of global financial institutions, said.
+((Washington newsroom 202-898-8312))
+Legislation to dramatically relax U.S. export restrictions on computer encoding technology moved ahead on Wednesday as the House Judiciary Committee approved the measure.
+The bill, known as the Security and Freedom through Encryption Act, now goes to the House International Relations Committee where opponents plan to make their stand.
+Encryption, computer programmes that scramble information and render it unreadable without a password or software "key," has become an essential component of global communications and electronic commerce over the Internet.
+The Clinton administration has opposed the bill and similiar measures in the Senate, arguing that allowing strong encryption out of the country will put it in the hands of international criminals and terrorists.
+Representative Bob Goodlatte, the bill's author, said he had spoken to administration officials on Tuesday and hoped a compromise could be reached.
+"We're very, very close in many areas," the Virginia Republican told reporters after the committee vote. "The export control issue is probably the area that we're still the furthest apart on."
+After the votes, administration officials emphasised the differences. Under Secretary of Commerce William Reinsch said the administration "is disappointed that the committee acted precipitously. The bill contains serious deficiencies."
+Goodlatte's bill also would write into law the current policy of allowing unrestricted domestic use of encryption.
+The bill would criminalize the use of encryption to conceal information related to the commission of a felony.
+Software industry officials and privacy advocates, who have strongly opposed the export limits, urged lawmakers to continue moving the legislation forward.
+The International Relations Committee "will have a go at it but it's great to have some momentum," Netscape Communications Corp. public policy counsel Peter Harter told Reuters after the vote. "We've come a long way in a very short period of time. This legislation is moving at Internet time."
+Jonah Seiger, communications director at the Centre for Democracy and Technology, said the vote was a "historic moment."
+"The Judiciary Committee agreed that the administration has the wrong policy sending a very clear signal that we need to change direction," Seiger said.
+Before the vote, committee chairman Henry Hyde of Illinois prohibited amendments to the bill on the controversial export section. Hyde said the export section fell under the jurisdiction of the International Relations Committee.
+Sun Microsystem Inc's decision to use powerful computer encoding software made in Russia put added pressure on the Clinton administration on Monday to relax strict U.S. export controls on similiar products made by American companies.
+Encryption products, which scramble information and render it unreadable without a password or software "key," have become a critical component of global communications and online commerce over the Internet.  
+But encryption's power to prevent hackers from snooping on telephone calls and credit card numbers sent over the Internet can also be employed by drug cartels or terrorists to thwart law enforcement survellience.
+Clinton administration officials oppose allowing exports of powerful U.S. encryption programs unless the software is designed to allow the government to crack the codes by gaining access to the software keys.
+Federal Bureau of Investigation Director Louis Freeh and others have said repeatedly that the encryption "genie" is not yet "out of the bottle."  
+"It's an arguably legal way around what is clearly a ludicrous export control policy of the administration that is creating jobs in Russia," Rep. Bob Goodlatte said in a telephone interview.
+Goodlatte, Republican of Virginia, introduced one of several measures being considered by Congress to relax the export controls. The bill was passed by the House Judiciary Committee last week and is awaiting action by the International Relations Committee.
+If U.S. export restrictions stay in place, industry officials warned, other companies will go the same route.
+"A lot of U.S. companies have been contemplating this," said Jon Englund, vice president at the Information Technology Association of America. "Sun's move is the first example of a trend that will continue. We'll see more and more of that."
+Administration officials had no comment on the Sun announcement.
+((202-898-8312))
+The Clinton administration has crafted a plan to reform what many call outdated U.S. banking laws and will begin making its positions known over the next few weeks, industry officials said Monday.
+The administration will formally unveil its plan when Treasury Secretary Robert Rubin testifies at a House Banking Committee hearing June 3, but details of the plan are expected to emerge as early as this week, the officials said.
+Under Secretary John Hawke, a leading architect of the administration plan, is slated to speak here on Wednesday. In his speech, Hawke may indicate the administration's stand on mixing banking and commerce, lobbyists said.
+"Mr. Hawke certainly won't do anything to upstage Rubin," one lobbyist in contact with the administration noted. "But we will hear generally where they are on some of these topics."
+While most in Congress and the finance industry agree that the Depression-era barriers separating banking from securities and insurance should be torn down, there is little consensus about going farther and allowing banks to combine with securities and other firms.
+The administration's position has evolved over the past several months. A task force on financial reform headed by Hawke initially recommended eliminating all barriers.
+But the specter of Citicorp or Chase Manhattan merging with General Motors Corp. or Microsoft Corp. drew strong protests from House Banking Committee Chairman Jim Leach of Iowa, as well as prominent labor and consumer groups.
+And during the spring, several Democratic senators, led by Paul Sarbanes of Maryland, wrote to Rubin to register their opposition to mixing banking and commerce.
+Bowing somewhat to the criticism, the administration is now said to favor allowing limited combinations. Financial firms would be limited to a "basket" of non-financial activity, expressed as a percentage of total revenue or capital, some lobbyists said.
+But the basket could be further limited by prohibiting combinations of the largest financial and non-financial firms. For example, one approach would be to bar the 1,000 biggest commercial firms from owning or being owned by banks.
+Another difficult issue concerns regulating disparate financial businesses within a diversified firm.
+Almost everyone favors "functional regulation," meaning that each activity of a firm would be regulated by the appropriate regulator. The Securities and Exchange Commission would regulate securities activities while state insurance regulators would oversee insurance sales, for example.
+But debate continues about the level of federal intrusion in insurance regulation as well as the need for a top-level regulator to oversee entire firms.
+While some favor setting the Federal Reserve at the top of the heap, the administration is expected to back a committee approach. The committee would be composed of representatives of the various functional regulators.
+The Clinton administration has crafted a plan to reform what many call outdated U.S. banking laws and will begin making its positions known over the next few weeks, industry officials said Monday.
+The administration will formally unveil its plan when Treasury Secretary Robert Rubin testifies at a House Banking Committee hearing June 3, but details of the plan are expected to emerge as early as this week, the officials said.
+Under Secretary John Hawke, a leading architect of the administration plan, is slated to speak here on Wednesday. In his speech, Hawke may indicate the administration's stand on mixing banking and commerce, lobbyists said.
+"Mr. Hawke certainly won't do anything to upstage Rubin," one lobbyist in contact with the administration noted. "But we will hear generally where they are on some of these topics."
+While most in Congress and the finance industry agree that the Depression-era barriers separating banking from securities and insurance should be torn down, there is little consensus about going farther and allowing banks to combine with securities and other firms.
+The administration's position has evolved over the past several months. A task force on financial reform headed by Hawke initially recommended eliminating all barriers.
+But the specter of Citicorp or Chase Manhattan merging with General Motors Corp. or Microsoft Corp. drew strong protests from House Banking Committee Chairman Jim Leach of Iowa, as well as prominent labour and consumer groups.
+And during the spring, several Democratic senators, led by Paul Sarbanes of Maryland, wrote to Rubin to register their opposition to mixing banking and commerce.
+Bowing somewhat to the criticism, the administration is now said to favour allowing limited combinations. Financial firms would be limited to a "basket" of non-financial activity, expressed as a percentage of total revenue or capital, some lobbyists said.
+But the basket could be further limited by prohibiting combinations of the largest financial and non-financial firms. For example, one approach would be to bar the 1,000 biggest commercial firms from owning or being owned by banks.
+Another difficult issue concerns regulating disparate financial businesses within a diversified firm.
+Almost everyone favours "functional regulation," meaning that each activity of a firm would be regulated by the appropriate regulator. The Securities and Exchange Commission would regulate securities activities while state insurance regulators would oversee insurance sales, for example.
+But debate continues about the level of federal intrusion in insurance regulation as well as the need for a top-level regulator to oversee entire firms.
+While some favour setting the Federal Reserve at the top of the heap, the administration is expected to back a committee approach. The committee would be composed of representatives of the various functional regulators.
+Treasury Secretary Robert Rubin, outlining a plan to overhaul Depression-era laws governing the U.S. financial sector, said Wednesday the Clinton administration favored allowing banks to enter the securities and insurance fields.
+"The old lines that separated insurance, securities and banking industries have increasingly blurred as new financial services and products have appeared," Rubin said in a speech here.
+The highly anticipated administration proposal, originally expected in March, takes its place with several bills already introduced in Congress. "We look forward to working with Congress on this important initiative," Rubin said.
+Increased competition in financial services should benefit consumers, generating savings of up to $15 billion a year, Rubin said.
+The new proposal did not take a firm position on the controversial question of allowing banks to combine with non-financial, commercial firms.
+"Because of the nature of the issues and the complete lack of consensus, we think the issue needs to be further debated by Congress before settling on a final approach," Rubin said.
+Some lawmakers, along with smaller banks and consumer groups, adamantly oppose allowing banks to combine with commercial firms. But insurance companies and securities firms say they are already intertwined with non-financial interests and could not compete with banks if such combinations were not permitted.
+Rubin outlined two possible approaches. Under one approach, some mixing would be permitted but limited and with the 1,000 largest non-financial firms excluded.
+Under a second approach, no mixing would be allowed with banks but, as currently permitted, thrifts would be allowed to combine with  commercial firms.
+If banks are allowed to mix with commercial firms, the reforms could take effect two years after enactment, Rubin said. If mixing is not allowed, the reforms could take effect in nine months.
+The Federal Reserve should continue to oversee bank holding companies, while specific activities would be overseen by specific regulators such as the Securities and Exchange Commission and state insurance regulators.
+Banks would be allowed to underwrite municipal revenue bonds. An exemption for banks in the federal mutual fund law, the Investment Company Act, would be narrowed.
+The U.S. Commerce Department showed an unexpected degree of flexibility in approving an application from Sybase Inc to export computer encoding products, company officials said on Wednesday.
+About a dozen companies have already gotten permission this year to export products with encryption, data scrambling technology that renders information unreadable without a password or software "key."
+But Sybase's products appeared to skirt strict U.S. export rules in effect since the beginning of the year.  
+"I was sufficiently surprised when I got word over the phone that we had been approved that I wrote a letter spelling out what I saw as the differences of our approach versus (the regulations)," said Tom Parenty, Sybase's director of data and communication security. Shortly thereafter, Parenty said, he received written confirmation.
+To export powerful encryption under the current rules, a company must include features allowing the government to crack the codes by gaining access to the software keys. Companies may export medium-strength encryption by promising to include so-called key recovery features within two years.  
+The rules indicate that a product must allow key recovery both for encrypted stored data, like a file on a hard drive, as well as for live communications that are encoded.
+But Sybase's products, Internet transaction software and client-server database programs, will allow for key recovery within two years only of stored data. Encrypted communications between a customer and a web site using the Sybase transaction software, for example, would not allow for government decoding, Parenty said.
+The key recovery feature was designed to meet the needs of customers, he said.  
+"Many people want a key recovery mechanism for stored data," Parenty said. "But there is no reason, once I have the answer to my query, to want the keys to decrypt those communications."
+Sybase still supports legislative proposals that Congress is considering that would eliminate most of the export restrictions, Parenty said.
+The Clinton administration has opposed loosening the rules, but pressure for change continued to mount this week, as Sun Microsystems Inc announced it would get around the rules by marketing Russian-made encryption with its export products.
+And on Wednesday, a group of cryptography experts released a study concluding that the large-scale infrastructure needed to support key recovery for law enforcement agencies could compromise the security of lawful encryption users.
+((--202-898-8312))
+Treasury Secretary Robert Rubin outlined on Wednesday the Clinton administration's plan to allow banks to get into the securities and insurance businesses, eliminating 60-year-old legal barriers enacted during the Great Depression.
+"The old lines that separated insurance, securities and banking industries have increasingly blurred as new financial services and products have appeared," Rubin said.
+The plan would allow banks, securities firms and insurance companies to compete directly under a uniform set of regulations. That increased competition should benefit consumers, generating savings of up to $15 billion a year, Rubin said in a speech at the Exchequer Club here.
+The highly anticipated administration proposal, originally expected in March, takes its place with several bills already introduced in Congress. "We look forward to working with Congress on this important initiative," Rubin said.
+House Banking Committee Chairman Jim Leach welcomed the plan, but said some substantive issues were unresolved.
+"While differences of judgment on several key legislative points remain, Secretary Rubin's statement today is very constructive to the process," the Iowa Republican said.
+Industry participants said the administration plan would give the reform effort a needed boost.
+The proposal "should provide considerable momentum for long-needed reform," Bankers Trust New York Corp. Chairman Frank Newman said. Newman gave the effort some prior momentum last month, when his bank took advantage of recent regulatory changes and acquired the securities firm Alex. Brown Inc.
+Consumer advocates, however, complained that the proposal did not contain adequate measures to protect bank customers buying insurance.
+"We're very disappointed that there are no protections on insurance," Mary Griffin of Consumers Union said. Banks have a weak track record in that area, she added.
+Credit insurance on mortgages, the second most popular insurance product sold by banks, "is one of the biggest consumer rip-offs out there," she said.
+The Rubin proposal did not take a firm position on the controversial question of allowing banks to combine with non-financial, commercial firms.
+"Because of the nature of the issues and the complete lack of consensus, we think the issue needs to be further debated by Congress before settling on a final approach," Rubin said.
+Some lawmakers, along with smaller banks and consumer groups, adamantly oppose allowing banks to combine with commercial firms. But insurance companies and securities firms say they are already intertwined with non-financial interests and could not compete with banks if such combinations were not permitted.
+Rubin outlined two possible approaches. Under one approach, some mixing would be permitted but limited and with the 1,000 largest non-financial firms excluded.
+Under a second approach, no mixing would be allowed with banks but, as currently permitted, thrifts would be allowed to combine with commercial firms.
+Treasury Secretary Robert Rubin, outlining a plan to overhaul Depression-era laws governing the U.S. financial sector, said Wednesday the Clinton administration favoured allowing banks to enter the securities and insurance fields.
+"The old lines that separated insurance, securities and banking industries have increasingly blurred as new financial services and products have appeared," Rubin said in a speech here.
+The highly anticipated administration proposal, originally expected in March, takes its place with several bills already introduced in Congress. "We look forward to working with Congress on this important initiative," Rubin said.
+Increased competition in financial services should benefit consumers, generating savings of up to $15 billion a year, Rubin said.
+The new proposal did not take a firm position on the controversial question of allowing banks to combine with non-financial, commercial firms.
+"Because of the nature of the issues and the complete lack of consensus, we think the issue needs to be further debated by Congress before settling on a final approach," Rubin said.
+Some lawmakers, along with smaller banks and consumer groups, adamantly oppose allowing banks to combine with commercial firms. But insurance companies and securities firms say they are already intertwined with non-financial interests and could not compete with banks if such combinations were not permitted.
+Rubin outlined two possible approaches. Under one approach, some mixing would be permitted but limited and with the 1,000 largest non-financial firms excluded.
+Under a second approach, no mixing would be allowed with banks but, as currently permitted, thrifts would be allowed to combine with  commercial firms.
+If banks are allowed to mix with commercial firms, the reforms could take effect two years after enactment, Rubin said. If mixing is not allowed, the reforms could take effect in nine months.
+The Federal Reserve should continue to oversee bank holding companies, while specific activities would be overseen by specific regulators such as the Securities and Exchange Commission and state insurance regulators.
+Banks would be allowed to underwrite municipal revenue bonds. An exemption for banks in the federal mutual fund law, the Investment Company Act, would be narrowed.
+Federal Reserve Chairman Alan Greenspan urged lawmakers on Thursday to put off consideration of controversial proposals that would allow banks to merge with commercial companies, such as carmakers.
+Instead, he said Congress should press ahead with more modest financial reforms that would knock down the 60-year-old legal barriers that prevent banks from affiliating with insurance companies and securities firms.
+"Congress should widen the permissible range of affiliations for banking organizations in order to expand the choices for consumers and increase the efficiency of financial markets," Greenspan told the House Banking Committee.
+Technology and free-market competition are blurring the boundries between financial and non-financial companies, but Congress can afford to wait, Greenspan said.
+"Any wider authorization of banking and commerce should be postponed while we focus on financial modernization," he said. "Were we to move forward, it is truly irreversible."
+Greenspan's position reflected an evolution of the Fed's view since February when he last testified on reforming the 1933 Glass-Steagall Act. At that time, Greenspan urged caution, but backed a transitional approach allowing limited mixing.
+Since then, numerous lawmakers, small bankers and a host of interest groups, including consumer and labor organizations, have voiced opposition to allowing such combinations.
+They complained that allowing a company like Microsoft Corp. or General Motors Corp. to own a major bank would diminish competition and could bias lending decisions.
+Banking Committee chairman Jim Leach, an ardent opponent of mixing banking and commerce, said there was no public support for allowing commercial companies to own banks.
+"I think that's going too far," the Iowa Republican said.
+Rep. Marge Roukema, who has introduced a bill that would allow banking and commerce combinations, said she was disappointed by Greenspan's testimony.
+Because savings and loans institutions are allowed to combine with commercial firms under current law, not including banking and commerce in new legislation leaves "an enormous loophole," said Roukema, Republican of New Jersey.
+Analysts said Roukema's observation was critical to understanding why Congress has been unable to modernize bank law, despite repeated efforts over the past decade.
+"It's already out there," said Karen Shaw Petrou, president of bank consulting firm ISD/Shaw Inc., referring to the savings and loan authority. "That's always been the stumbling block and if you take it away, people will get mad and Congress doesn't deal with that very well."
+On Wednesday, Treasury Secretary Robert Rubin outlined the Clinton administration's bank plan, but sidestepped the controversial banking and commerce question. Instead, he offered Congress two alternatives -- one that would allow such combinations and another that would not.
+Federal Reserve Chairman Alan Greenspan urged lawmakers on Thursday to put off consideration of controversial proposals that would allow banks to merge with commercial companies, such as carmakers.
+Instead, he said Congress should press ahead with more modest financial reforms that would knock down the 60-year-old legal barriers that prevent banks from affiliating with insurance companies and securities firms.
+"Congress should widen the permissible range of affiliations for banking organisations in order to expand the choices for consumers and increase the efficiency of financial markets," Greenspan told the House Banking Committee.
+On Wednesday, Treasury Secretary Robert Rubin outlined the Clinton administration's plan to allow banks to get into the securities and insurance businesses.
+But Rubin sidestepped the controversial question of whether banks should be allowed to merge with commercial companies, instead offering Congress two proposals -- one that would allow such combinations, and another that would not.
+Greenspan acknowledged that the barriers separating banks and commercial companies will eventually crumble with the continued advance of technology.
+But he urged caution in knocking them down now, in part because of uncertainties over how that would affect the U.S. financial system.
+"Any wider authorisation of banking and commerce should be postponed while we focus on financial modernisation," Greenspan said.
+The administration plan would allow banks, securities firms and insurance companies to compete directly under a uniform set of regulations. That increased competition should benefit consumers, generating savings of up to $15 billion a year, according to Rubin.
+The highly anticipated administration proposal, originally expected in March, took its place with several bills already introduced in Congress to overhaul the Glass Steagall Act of 1933. "We look forward to working with Congress on this important initiative," Rubin said.
+Congress and the banking industry have been working to reform the law for more than a decade without success. But this year, previous opponents of reform have come to the table as regulators and courts have chipped away at the law and granted banks some new powers.
+The Clinton administration gave a solid boost this week to congressional efforts to overhaul antiquated U.S. banking laws but substantial hurdles remain, participants in the debate said.
+On Wednesday, Treasury Secretary Robert Rubin outlined the administration's plan to eliminate the 1933 Glass-Steagall legal barriers separating banks from securities firms and insurance companies.
+The administration plan was due to Congress by March 31 and the nearly two-month delay had some lobbyists fearing that the administration would avoid the tangled regulatory controversies and not submit anything.
+Congress has sought to reform banking laws for more than a decade, but one interest group or another has always managed to block passage of legislation. In prior years, banks sought reform, while other financial firms opposed change.
+Recently, courts and regulators have granted banks new authority, however. That brought insurance companies and securities firms to the table to seek a level playing field.
+"There is renewed hope that the 105th Congress will tackle this difficult issue," said David Farmer, lobbyist for the Alliance of American Insurers, after Rubin's speech.
+The action now shifts to the Banking committees in the House of Representatives and the Senate, where detailed reform measures will be drafted. Rubin will provide more details of the Clinton plan in testimony before Congress on June 3.
+House Banking Committee Chairman James Leach said this week that drafting will begin immediately after that testimony and that he wants committee action completed by mid-June.
+It is at the drafting stage where some past efforts to reform banking laws have foundered as competing interests fought over the details.
+The new administration proposal ducked one of the most contentious issues -- whether banks should be allowed to combine with non-financial, commercial firms.
+Instead of taking sides, Rubin offered two alternatives. Under one plan, banks would be allowed a limited amount of commercial activity, but the largest 1,000 commercial companies could not own or be owned by banks.
+Under a second alternative, the current prohibition would be continued, but the current exception allowing savings and loans to be owned by commercial companies would also be maintained.
+Several months ago, administration officials were discussing proposals to allow nearly unlimited mixing of banking and commerce. The apparent retreat left advocates of greater mixing fuming.
+"Their recommendation is tantamount to surrender on the issue," Minnesota Democrat Rep. Bruce Vento said.
+Vento and New Jersey Republican Rep. Marge Roukema introduced a bill in January that would allow banks to have a "basket" of commercial activity accounting for up to 25 percent of an institution's total business.
+Another blow to Vento and Roukema's efforts came Thursday when Federal Reserve Chairman Alan Greenspan testified before the House Banking Committee.
+Greenspan said Congress should eliminate Glass-Steagall now, but put off the banking and commerce issue for future review. "Any wider authorization of banking and commerce should be postponed while we focus on financial modernization," he said.
+Now the banking and commerce issue threatens to derail their backing, said bank consultant Karen Shaw Petrou, president of ISD/Shaw Inc.
+"The administration's plan is a decent baby-step," Petrou said. "But unsurprisingly, it's not the lightning bolt that transforms the debate."
+Securities firms and insurance companies are involved in commercial activity, but want to get into banking if banks are allowed into their fields.
+"If you don't allow banking and commerce, then you create obstacles for non-banks," Petrou said. "But somebody's twist or turn to solve that then creates another problem for someone else."
+Even a small percentage limit on commercial activity would accommodate the largest non-bank financial companies, according to research from the Federal Deposit Insurance Corp. released on Thursday.
+Among the seven securities firms in the Fortune 1000, plus Goldman Sachs &amp; Co., none earned much more than 5 percent of their revenue from commercial activity in 1996, the FDIC estimated.
+Only one of the five largest life and health insurers and one of the five largest property and casualty firms exceeded the 5 percent level, the FDIC said.
+Four of the 10 largest diversified financial firms would exceed the 5 percent level, however. American Express derived 9 to 14 percent of its revenue from commercial activities, for example, and Marsh &amp; McLennan Cos Inc. had 28 percent of revenues from commerce.
+Scientists working on the next generation of the Internet are finding their first challenge is to convince a sceptical U.S. Congress to fund the project.
+Rather than stumbling over new hardware or software, the next generation network has quickly run into several road blocks on Capitol Hill.
+On Tuesday, scientists involved with the project, including President Bill Clinton's top science adviser John Gibbons, will try to soothe concerns at a Senate hearing.
+Some lawmakers are worried that the project lacks focus and is not sufficiently different from a related university project known as Internet2.
+The next generation Internet project, announced with great fanfare by Clinton during last year's presidential campaign, aims to send data at 1,000 times the speed of today's net. Higher speed and improved reliability could spur a host of new uses for the network, some with sound and video.
+Clinton pledged the government would spend $100 million annually for five years to build the super high-speed network and promote its use.
+The money was to come from reallocating existing research funds, but that plan is already in trouble. In April, the House of Representatives passed a budget for the National Science Foundation that specifically barred any spending on the next generation Internet.
+The bill is awaiting action by the Senate and could be modified before going to the president's desk.
+In May, 28 senators sent a letter to science adviser Gibbons complaining about the composition of the next generation Internet's advisory board. The senators, from both political parties but all from rural states, noted that the board's 20 members came from only eight states.
+"Instead of a potentially major positive development, therefore, 'Next Generation Internet' and Internet2 becomes a significant source of concern for us," the senators wrote in the letter obtained by Reuters.
+National Science Foundation officials are confident that the programme will go forward. "Next Generation Internet is a presidential initiative that will have a lot of congressional involvement," NSF spokeswoman Elizabeth Gaston said.
+Congressional staffers said for the time being they remained confused about the administration's priorities. "Everyone I speak with tells me different things about what these programmes are supposed to do, and which agencies get which portions of the budget," one staffer said.
+To some degree, the confusion reflects the changing fortunes of the Internet. While the original Internet, including connections to universities, was largely funded by government, this time around higher education and industry are more likely to foot some of the bill.
+More than 100 schools have pledged to spend $50 million a year on Internet2, mainly for higher speed connections and switches. The schools are also seeking corporate sponsorship.
+Less government involvement for building the plumbing frees up more resources for cutting-edge research, according to George Strawn, director of the NSF's division of networking and communications research.
+"The first time around, the NSF sort of had to take the lead to diffuse it to all of higher education because there wasn't an industry yet," Strawn said. "Now that there is, as soon as it becomes cost effective we've got peddlers out there who will find higher education a receptive customer."
+The original Internet began as a Defence Department project called ARPAnet to link far-flung computer centres. Funded mostly by the government until the mid-1980s, the net is now run almost entirely by private companies including MCI Communications Corp, Sprint Corp and BBN Corp.
+Representatives from those companies gathered with other stars of the Internet community in Virginia two weeks ago for a "next generation" planning meeting. Some will return to Washington next week to explain the project to Congress.
+Treasury Secretary Robert Rubin goes to Capitol Hill on Tuesday to further explain the Clinton administration's bank reform plan, but lawmakers are likely to focus foremost on what the plan left out.
+The Clinton proposal, along with several pending bills, would scrap the 1933 Glass-Steagall Act's separation of banking from other financial services.
+On the contentious issue of going further and allowing banks to combine with commercial firms, however, the administration ducked.  
+Instead, the Clinton plan unveiled by Rubin on May 21, offered two alternatives and left the hard choice to Congress.
+"We think the issue needs to be further debated by Congress," the secretary said as he announced the plan.
+Congress has debated overhauling antiquated U.S. banking laws for more than a decade without success and some analysts suggest the banking and commerce issue will sidetrack this year's attempts.
+At Tuesday's House Banking Committee hearing, opponents of mixing banking and commerce led by committee chairman and Iowa Republican Jim Leach will try to steer Rubin to examine the risks of unlimited mergers.
+Proponents, including subcommittee chairpersons Marge Roukema and Richard Baker, Republicans from New Jersey and Louisiana respectively, will take the opposite tack.
+Under one of the two alternative outlined by Rubin last month, limited mixing would be permitted but excluding the 1,000 or so largest nonfinancial firms, measured by asset size.  
+Bank holding companies could derive "some significant percentage" of their gross revenues from commercial activity under the approach, referred to as a basket limitation.
+Under the second alternative, the current prohibition on mixing would be maintained but the current exception allowing commercial firms to own savings and loan institutions would also be maintained.
+The administration chose to walk a fine line on the issue after Democratic legislators and traditionally Democratic labor and consumer groups came out against combining banking and commerce.
+On Monday, other opponents including small bankers and agriculture groups issued a statement against even limited mixing of banking and commerce.
+"Say NO to those who would undermine the world's strongest and most dynamic economic and financial system," the groups said. The 31 signers of the statement ranged from the National Bankers Association to the National Bakers Association.
+Some lawmakers also plan to raise concerns at the hearing that portions of the Clinton plan contain loopholes that would render any limitations on banking and commerce irrelevent, staffers said.  
+Any firm could own a thrift and establish a so-called wholesale financial institution. Wholesale banks could only accepts deposits over $100,000, would not be covered by deposit insurance, but would have access to the Federal Reserve's electronic payment system.
+"The way the wholesale institution is structured would allow enormous activity," one staffer said. "It's a big loophole."
+The notion of allowing savings and loans to continue operating under different rules than banks is also likely to draw some criticism.
+Under legislation passed by Congress last year to recapitalize the savings industry's deposit insurance fund, the Clinton administration was directed to report on how the legal charters of the two industries could be merged.
+((--202-898-8312))
+The heads of 10 leading U.S. high-technology companies descended on Washington Wednesday to lobby for stronger laws protecting their products from piracy.
+Executives including Microsoft Corp Chairman Bill Gates and Intel Corp Chairman Andrew Grove met with senators in the morning, reporters in the afternoon, and Vice President Al Gore and Commerce Secretary William Daley later in the day. They came armed with fresh research indicating that the software industry has been a key factor boosting economic growth.  
+"The PC software industry is a very fast growing, very innovative business," Gates told reporters. "Government statisics don't accurately capture all the things going on."
+According to research done for the Business Software Alliance, the industry totaled $102.8 billion in 1996, directly employing 619,000 people and paying wages of $36.4 billion. Another 1.4 million American workers owed their jobs indirectly to the industry.
+The industry has grown at a rate of 12.5 percent annually since 19890, more than twice as fast as the U.S. economy, the study concluded.
+To spur further gains, the software executives urged political leaders to strengthen international laws protecting intellectual property,
+Piracy cost the industry $11.2 billion in 1996, the report noted. Although a considerable proportion of the piracy occurred in China, the software executives said they favored extending most favored nation status to China.
+Government could also promote software sales by relaxing strict export limits on computer encoding technology, the executives said.
+Encryption software, which scrambles information and renders it unreadable without a password or software "key," was the realm of spies and generals. But the technology has become an increasingly critical security component of electronic commerce and global communications networks.
+While U.S. companies cannot export powerful encryption products, foreign companies are cleaning up, the executives warned. Last month, for example, Sun Microsystems said it would market an encryption program made in Russia with some of its products to evade the export limits.
+"The cat's already out of the bag," Novell Inc Chief Executive Eric Schmidt said. U.S. law should be modified to allow export of any encryption product already available abroad, he said.
+Intel's Grove said fast moving technology companies sometimes get frustrated working with more sedate pace of government. "We have been asked to exercise patience," Grove said. "Patience is not one of our virtues."
+((--202-898-8312))
+U.S. lawmakers redrafting a legislative proposal to modernize U.S. banking laws will rely heavily on the Clinton administration's reform plan, congressional staffers said on Wednesday.
+But whatever provisions end up in the new draft, expected to be finished by Friday, the real battle will be fought when the House Banking Committee begins its formal consideration, or mark up, of the proposal currently scheduled for next week.  
+"The goal here is to get in the (bill) those areas where there is general agreement," committee spokesman David Runkel said.
+"The intent is to use as much of the Treasury (Department's) language as appropriate," Runkel said. The most controversial questions will be resolved as lawmakers offer varied amendments during the mark up, he added.
+Treasury Secretary Robert Rubin unveiled the administration's plan to overhaul antiquated U.S. banking laws in a speech on May 21.  
+In testimony on Tuesday, Rubin urged Congress to scrap the 1933 Glass-Steagall Act and free banks to enter other financial sectors like insurance and securities underwriting.
+At least four major areas of disagreement remain that will be the focus of the scheduled June 11 mark up, staffers said. Some lawmakers want the mark up delayed at least a week, however, so the session could be delayed.
+First, wide differences of opinion exist among legislators about whether financial firms should be allowed to engage in nonfinancial, commercial activities. The administration ducked the difficult question, offering two alternatives instead.  
+Three earlier bills also each took a different approach and numerous alternatives have been floated in recent weeks. "You'll see it all at the mark up," one staffer predicted.
+Also, the insurance industry is up in arms about provisions in the administration plan that may broaden a 1996 Supreme Court decision limiting state regulation of bank insurance sales. The bill would allow federal bank regulators to overrule state insurance authorities in some instances.
+"This could have the effect of threatening the safety and soundness of the nation's insurance system," said David Pratt, senior vice president of the American Insurance Association.  
+A third controversey sprouted from one of the administration's two "alternatives" on banking and commerce.
+The plan said Congress could allow limited mixing or keep the current prohibition while also maintaining the present exception allowing commercial companies to own thrifts.
+Under the second option, thrifts and banks would continue to operate under different federal charters. That outraged the banking industry, which thought it made a deal last year guaranteeing the charters would be merged.  
+"A very critical piece if the puzzle will be that any financial reform measure specifically deals with the thrift charter issue," said Beth Climo, group director of financial industry affairs at the American Bankers Association.
+"That is the fundamental thing that needs to be addressed," Climo said.
+Another area of disagreement surrounds proposals to allow creation of so-called wholesale financial institutions, or "woofies." These bank-like entities could only take deposits over $100,000 and would not receive deposit insurance.
+Some opponents of mixing banking and commerce fear that wholesale banks represent a significant loophole, since a commercial company could set up a "woofie."
+Banking Committee chairman Jim Leach said earlier this week that he hoped to have the committee approve a bill and send it to the House floor by July 4.
+But even if a majority of the banking panel can reach a consensus, the bill will be sequentially referred to the House Commerce Committee. That committee could then hold its own mark up or even stall the legislation.
+((--Washington Newsroom 202-898-8312))
+The International Monetary Fund opened a site on the Internet Thursday providing information about the types of economic data available in 18 member countries.
+"For a long time we have been trying to press countries to report to us on a more timely basis, more information, and based on good statistical systems," said Jack Boorman, director of the IMF's policy and review department.
+The 1994-95 Mexican peso crisis highlighted the need for timely and accurate data about developing countries, Boorman told a news conference.
+The site does not include the countries' actual data -- that may come later -- but it lists contacts for obtaining the information.
+"Good statistical citizenship helps to inform markets," Boorman said. "The whole purpose of this system is to help that process, to make sure that markets are getting better data in a timely way."
+The Internet address of the site is http://dsbb.imf.org. It lists information such as the frequency, schedule and types of economic and financial data released on a regular basis by the countries which have subscribed to the fund's "Special Data Dissemination Standard."
+The countries on the site are Argentina, Canada, Denmark, Finland, Ireland, Italy, Malaysia, Mexico, the Netherlands, Norway, Peru, the Philippines, Singapore, Slovenia, Switzerland, Thailand, Britain and the United States.
+By next week, information about another eight countries is expected to be added. Those countries are Croatia, France, Hungary, Japan, Poland, South Africa, Sweden and Turkey.
+Another eight countries have subscribed to the data standard but are not ready to go online. Those are Austria, Australia, Belgium, Chile, Columbia, Iceland, Israel, and Lithuania.
+The special standard is being phased in over two years. countries agreed to meet the standards by Dec. 31, 1998.
+Discussions are continuing with other countries that have not yet agreed to subscribe, including Germany, said John McLenaghan, director of the IMF statistics department.
+IMF officials said the site could eventually include direct links to countries' data or other kinds of information.
+"We're starting something which, while it has a very specific content and frame at the present time, has potential for going in directions that none of us perhaps quite see at the present time," Boorman said.
+The number of consumers and businesses filing for U.S. bankruptcy protection continued a dramatic rise, hitting a record 335,073 in the first quarter of 1997, the American Bankruptcy Institute said Tuesday.
+The first quarter total, the fifth straight quarterly record, was up 26 percent from 266,149 in the first quarter of last year, the non-partisan research group noted.
+Consumers filed more than 321,000 of the first quarter petitions, about 96 percent of the total and a rise of 27 percent from a year earlier.
+"The continued record pace of bankruptcies tracks the sustained growth in consumer spending and debt," said the group's executive director, Samuel Gerdano said.
+After consumer filings surpassed the 1 million mark for the first time last year, the first quarter's pace "suggests that 1997 will surpass the 1996 record," he said.
+The quarter's bankruptcy surge has already hit some consumer lenders.  Credit card giant Advanta Corp. shocked Wall Street when it reported a loss of 43 cents a share for the first quarter.
+"Credit card debt is playing a big role in bankruptcy trends," said George Salem, banking industry analyst at Gerard Klauer Mattison &amp; Co. in New York. And bankruptcies, in turn, have been depressing credit card company profits, Salem said.
+"It's like continuing to be punched and it's going to be a while before it stops," Salem said.  Card issuers are cutting back on lending and tightening underwriting standards, but the current problems result from loans made more than a year ago, he said.
+Looking at the 12 months ended March 31, 1997, Hawaii had the largest increase in bankruptcies, with a 61 percent jump. The northern section of West Virginia followed closely behind with a 60 percent rise.
+About 70 percent of consumers filed for a Chapter 7 bankruptcy, where unsecured debt is wiped out and the debtor is allowed to keep some property.
+Some card companies maintain that more consumers should be forced to file for Chapter 13 reorganizations, where debts are not wiped out but must be repaid over several years.
+Visa USA said this week that its analysis of bankruptcy petitions showed that mounting credit card debt was not responsible for the rise in bankruptcies.
+"This analysis refutes the notion that bank credit cards are largely responsible for the increase," Visa USA Senior Vice President Kenneth Crone said.
+Crone said the analysis showed people with an ability to repay some of their debts were filing for Chapter 7 bankruptcy. "People who can repay a portion of their debts should be required to do so," he said. "Until this changes, lenders and consumers will continue to foot the bill."
+But consumer groups disputed the Visa findings and said excessive credit card debt was directly implicated.
+"They are not making the correct comparisons," said Stephen Brobeck, executive director of the Consumer Federation of America. "The only two figures that really matter are the average income and average credit card debt of bankrupt people."
+Among people who file for Chapter 7, the average income was about $20,000 and the average credit card debt was about $17,000, Brobeck said.
+Senate Banking Committee Chairman Alfonse D'Amato on Wednesday introduced legislation to prohibit banks from charging additional fees to non-customers who use their automated teller machines.
+About 54 percent of all automated teller machines now impose a surcharge on non-customers, according to a survey by the General Accounting Office released by D'Amato at a congressional hearing.
+"ATM's were supposed to reduce costs, and the savings could be passed on to consumers," the New York Republican said. "Now, banks are suddenly claiming that ATM's are no longer cost-effective."
+"They have decided to soak consumers with multiple fees every time they need to take money out of their accounts," D'Amato said.
+Consumer groups urged lawmakers to enact the ban. Surcharges pose a serious competitive threat to smaller banks, which have fewer automated teller machines, according to Edmund Mierzwinski, programme director at the non-profit U.S. Public Interest Research Group.
+"If enough small bank customers switch accounts to big banks to avoid surcharges, then the big banks, facing less competition, will raise the fees they charge their own customers even more," Mierzwinski said.
+After the hearing, banks denied the fees amount to double-dipping and argued consumers benefit from the proliferation of ATMs made possible by surcharge revenues.
+"The marketplace is at work," said Ed Yingling, executive director of the American Bankers Association. "Consumers, not the government, should decide if they are willing to pay for the convenience of using ATMs at thousands of new locations."
+If surcharges are banned, many newly installed machines would be shuttered, Yingling said.
+Until last year, the two largest ATM network operators, Mastercard International's Cirrus and Visa USA's Plus, generally prohibited banks from levying surcharges on non-customers. Banks received a portion of the fee on such transactions charged by the customer's own bank.
+Last April, Cirrus and Plus began allowing ATM surcharges, and the fees have rapidly proliferated. Fifteen states, including Texas, had previously allowed surcharges. More recently, Connecticut and Iowa have passed legislation banning surcharges.
+The GAO found that about one-third of banks impose surcharges, covering 54 percent of all teller machines in the country. From the end of 1995 to February 1997, the number of ATMs rose 34 percent, while the number imposing a surcharge rose 320 percent, the GAO said.
+The average surcharge was $1.14 in 1997, up from 99 cents in 1995.
+Not all the senators at Wednesday's hearing favoured legislation banning surcharges. Sen. Lauch Faircloth, Republican of North Carolina, said he preferred allowing the market to set ATM fees.
+"The ATM surcharge is a convenience fee," Faircloth said. "That convenience comes at a price."
