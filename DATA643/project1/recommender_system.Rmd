@@ -1,0 +1,191 @@
+---
+title: "Recommender System for Music Recommendation"
+output:
+  html_document: 
+    theme: cerulean
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message = F,warning = F)
+```
+
+### Description 
+
+The objective of this recommender system is to recommend music artists to users based on the previous music artists that the user often listened. The system uses collaborative filtering for recommendation. The number of time a user listened a particular artist is used as a rating (or proxy for rating). 
+
+
+### Data 
+
+The dataset used in this system contains the number of time a user listened music from a particular artist.  The dataset contains 92834 relations between 1892 users and 17632 artists. 
+
+Data source: https://grouplens.org/datasets/hetrec-2011/ (Last.FM)
+
+For this demonstration of the recommender system only popular artists and users who has enough relations are used.
+
+#### Load Data
+
+```{r}
+#Read artist File
+artists = read.table("artists.dat",sep="\t",fileEncoding = "UTF-8",stringsAsFactors = F,comment.char = "",quote="",header = T)
+str(artists)
+```
+
+```{r}
+user_artists = read.table("user_artists.dat",sep="\t",header = T)
+str(user_artists)
+```
+
+### Data Transformation
+
+#### Long to wide
+The data provided is in long format. Let's convert to wider format such that each row represent the listened count of a user. 
+
+```{r}
+library(tidyr)
+user_artists_wide = user_artists %>% spread(key=artistID,value=weight)
+dim(user_artists_wide)
+#Create character Id
+artists$charid=paste0("I",artists$id)
+```
+```{r}
+userids=user_artists_wide$userID
+user_artists_wide$IuserID = NULL
+rownames(user_artists_wide) = paste0("U",userids)
+colnames(user_artists_wide) = paste0("I",colnames(user_artists_wide))
+user_artists_wide[1:6,1:10]
+```
+### Filter, center and Scale data
+In order to ensure we have enough data to work with and also to keep the computation cost down, the top 1000 artists and the users who has listened to at least 11 artists are kept in the dataset. 
+
+In order to eliminate difference in scale of data between users the data is centered and scaled.
+
+```{r}
+#Select Top 1000 
+visits_byitem=colSums(user_artists_wide[,-1],na.rm = T)
+
+visits_1k = user_artists_wide[,order(visits_byitem,decreasing = T)[1:1000]]
+num_visits=apply(visits_1k,1,function(x) return(sum(!is.na(x))))
+visits_1k = visits_1k[num_visits>10,]
+dim(visits_1k)
+visits_1k=t(scale(t(visits_1k))[,])
+```
+
+### Methodlogy - User Based Collaborative Filtering
+
+We shall use user based collaborative filtering method to come up with recommendation. The recommendation is first completely hand coded and then the results are compared with the recommenderlab package. As the methodology used in the hand coded method is same as the one used by recommenderlab the results of hand coded method is expected to be in-line with the results from recommederlab. 
+
+**User based collaborative filtering**   
+
+Recommendation for user is made based on similarity between users as described below  
+
+* Compute similarity of the user with other user (using Pearson correlation)  
+* Select top 50 similar user of the user for whom recommendation needs to be done  
+* Compute items rating based on the recommendations done by the 50 similar users  
+* Recommend items with high ratings    
+
+#### Similarity Function
+For similarity between users we shall use Pearson correlation. The function below provides similarity between user or products.
+
+
+```{r}
+#Function that computes similarity
+similarity_user=function(all_data,user_data){
+  #Transpose so that users are on columns
+  all_data=t(all_data)
+  #Use pearson correlation
+  score = cor(all_data,user_data,use = "pairwise")
+  return(score)
+}
+```
+
+ 
+
+#### UBCF - Hand coded function
+
+```{r}
+#Function that predicts rating and list recommendation
+ubcf_recommend=function(data,user_data,num_rec=20,num_sim=50){
+  user_sim = similarity_user(data,user_data)
+  #Replace NA with zero
+  data_na0=data
+  data_na0[is.na(data_na0)]=0
+  top_sim_users=order(user_sim,decreasing = T)[1:num_sim]
+  ratings=(user_sim[top_sim_users,1]%*%data_na0[top_sim_users,])
+  prediction=NULL
+  prediction$ratings=ratings
+  #Set rating of already rated item to NA
+  ratings[!is.na(user_data)]=NA
+  prediction$recommendation=order(ratings,decreasing = T)[1:20]
+  #To do remove already visited artists
+  return(prediction)
+}
+
+```
+
+### Split data for training and testing
+In order to evaluate the recommendations the data is split into training and testing data. Training data is used for training and recommendations are computed for users in test data.
+
+```{r}
+library(recommenderlab)
+visits_1k_rrm=as(as.matrix(visits_1k),"realRatingMatrix")
+set.seed(100)
+eval_sets <- evaluationScheme(data = visits_1k_rrm, method = "split", train = .8, given = 10, goodRating=3, k = 1)
+
+```
+Function to get artist name given the Id
+
+```{r}
+getArtistName=function(artistid){
+  return(artists$name[artists$charid==artistid])
+}
+#Vectorize the function to enable get values for a vector of ids
+getArtistName=Vectorize(getArtistName)
+```  
+
+### Get Recommendation using hand coded UBCF
+
+
+```{r}
+#Convert realRatingMatrix to regular Matrix
+train=as.matrix(getRatingMatrix(getData(eval_sets,"train")))
+test=as.matrix(getRatingMatrix(getData(eval_sets,"known")))
+#realRating Matrix stores missing value as 0, convert them back to NA
+train[train==0]=NA
+test[test==0]=NA
+#Check prediction for one user
+pred1=ubcf_recommend(train,test[1,])
+cat("\n**** Recommendation for user",rownames(test)[1],"\n")
+recommend=getArtistName(colnames(train)[pred1$recommendation])
+cat(recommend,sep="\n")
+
+```
+
+### Get Recommendation using recommenderlab
+
+```{r}
+model_ubcf=Recommender(data=getData(eval_sets,"train"),method="UBCF",
+                          parameter=list(method="pearson",nn=50))
+recommend_rl=predict(model_ubcf,getData(eval_sets,"known"),n=20)
+
+cat("\n**** Recommendation for user",rownames(getData(eval_sets,"known"))[1],"\n")
+recommend=getArtistName(recommend_rl@itemLabels[as.vector(recommend_rl@items[[1]])])
+cat(recommend,sep="\n")
+
+```
+
+
+### Results Comparison  
+The results obtained from the hand coded UBCF method is pretty much same as the result provided by recommenderlab package
+
+```{r}
+n = nrow(test)
+recommendations=NULL
+same_as_rl=logical(n)
+for (i in 1:n){
+  recommendations[[i]]=ubcf_recommend(train,test[i,])
+  same_as_rl[i]=all(recommend_rl@items[[i]] %in% recommendations[[i]]$recommendation)
+}
+table(same_as_rl)
+
+```
+
+In 90% of the cases the recommendations made by hand coded function are exactly same as the recommendations made by recommenderlab package. In other instances the recommendations are very close to the recommendation made by the package and the difference could be due to implementation method/value approximation. 
