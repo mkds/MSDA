@@ -1,0 +1,414 @@
+---
+title: "Recommender System"
+author: "Mohan Kandaraj"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Objective
+
+Come up with a recommender system that provides solution to following   
+
+- Recommendation using collaborative filtering technique
+- Explore / Exploit Scheme 
+- Cold start conditions - Providing recommendation for new user
+- Recommendation based on predicted ratings and Explore / Exploit scheme
+- Evaluation mechanism to evaluate entire system 
+
+## Data Preparation
+
+### Source Data 
+
+The dataset for this project was originally posted on snap website http://snap.stanford.edu/data/web-FineFoods.html and now available also on kaggle site. The dataset contains 500k reviews of 74k products from 250k users.
+<https://www.kaggle.com/snap/amazon-fine-food-reviews>
+
+**Citation for data**  
+J. McAuley and J. Leskovec. From amateurs to connoisseurs: modeling the evolution of user expertise through online reviews. WWW, 2013. <http://i.stanford.edu/~julian/pdfs/www13.pdf>
+
+
+```{r, message=FALSE}
+library(data.table)
+library(recommenderlab)
+library(knitr)
+#Read Data
+reviews_raw <- fread("Reviews.csv")
+user_cnt <- as.vector(table(reviews_raw$UserId))
+prd_cnt <- as.vector(table(reviews_raw$ProductId))
+```
+
+
+### Distribution of Rating
+
+```{r, fig.height=4, fig.width=8}
+par(mfrow=c(1,2))
+hist(prd_cnt,breaks = 913,xlim=c(1,50),col="orchid",
+     main="Reviews By Product", xlab = "Number of Reviews")
+hist(user_cnt,breaks = 448,xlim=c(1,50),col="orchid",
+     main="Reviews by user", xlab = "Number of Reviews")
+```  
+   
+The distribution is as expected with more than 85% users and more than 75% products having less than 5 reviews. 
+
+### Remove Duplicates
+
+The data has more than one reviews from some users for one product. But the percentage of duplicate is low and hence We shall remove the duplicates.
+
+```{r}
+#Check for duplicate and Remove duplicates
+reviews_cnt <- reviews_raw[,.N,.(UserId,ProductId)]
+reviews_dup <- reviews_cnt[N>1,]
+message("Number of Duplicate Rating:",nrow(reviews_dup)," Percent: ",
+        round(nrow(reviews_dup)/nrow(reviews_cnt),2)*100,"%")
+dups <- paste(reviews_dup$UserId,reviews_dup$ProductId,sep="-")
+userprod <- paste(reviews_raw$UserId,reviews_raw$ProductId,sep="-")
+nondup <- !(userprod %in% dups)
+reviews_uniq <- reviews_raw[nondup,]
+#Select required columns 
+cols <- colnames(reviews_uniq)[c(2,3,7)]
+reviews_score <- reviews_uniq[,cols,with=F]
+
+```
+
+
+### Select Data for Model  
+In order to build collaborative filtering model we need select subset of data such that the user has at least n reviews. 
+
+
+```{r}
+# Function to get ratings such that at least n reviews arepreent for a user     
+get_nreviews <- function(reviews_score,n=15){
+  
+  prd_cnt <- table(reviews_score$ProductId)
+  #Select top 2000 Products
+  prds <- rownames(sort(prd_cnt,decreasing = T)[1:2000])
+  reviews_score <- reviews_score[ ProductId %in% prds,]
+  
+  #Select users such that at least n reviews present
+  usr_cnt <- table(reviews_score$UserId)
+  usrs <- rownames(usr_cnt[usr_cnt > n])
+  reviews_score <- reviews_score[ UserId %in% usrs,]
+  
+  reviews_score <- dcast(reviews_score,UserId ~ ProductId,
+                         value.var =c("Score") )
+  
+  
+  reviews_nscore <- as.matrix(reviews_score[,-1,with=F])
+  rownames(reviews_nscore) <- reviews_score$UserId
+  return(reviews_nscore)
+}
+
+reviews_nscore <- get_nreviews(reviews_score, 10)
+
+```
+
+
+### Data Normalization
+Normalizing data didn't help and resulted in poor performance. It could be possibly due to many users providing rating only for items they like. 
+
+```{r, fig.width=4,fig.height=4}
+rating_cnt <- table(reviews_nscore)
+barplot(rating_cnt,names=1:5, main = "Rating Distribution")
+```
+
+### Split data into train and test 
+
+The dataset is split into training and testing set using recommederlab package.
+```{r}
+#Convert to real rating matrix
+reviews_score_rrm <- as(reviews_nscore,"realRatingMatrix")
+set.seed(50) #This doesn't seems to work.The following split changes if rerun  
+eval_sets <- evaluationScheme(data = reviews_score_rrm, method = "split", 
+                              train = .8,given = 8,goodRating=3, k=1)
+unknown <- as(getData(eval_sets,"unknown"),"matrix")
+known <- as(getData(eval_sets,"known"),"matrix")
+test_user <- rownames(as(getData(eval_sets,"unknown"),"matrix"))
+test_rating <- reviews_nscore[test_user, ]
+
+```
+
+## Build System
+
+Three recommendation methods popularity based recommendation, user based collaborative filtering and item based collaborative filtering are built. 
+
+### Popularity based
+
+```{r}
+#Function to identify top products
+get_top_prods<- function(reviews_score, n=100){
+  good_rated <- reviews_score[Score >= 3,]
+  prd_cnt <-  reviews_score[,.N,ProductId]
+  setorder(prd_cnt,-N)
+  top_prds <- prd_cnt[1:n,]
+  return(top_prds)
+  
+}
+
+#Function that makes recommendation from popular products
+get_popular <- function(known_rating,popular,n){
+  reco <- known_rating
+  reco[,] <- 0
+  k <- nrow(popular)
+  prds <- colnames(known_rating)
+  for (i in 1:nrow(known_rating)){
+    visited_prods <- prds[!is.na(known_rating[i,])]
+    popular_sel <- popular[!(ProductId %in% visited_prods),]
+    selected <- sample(popular_sel$ProductId,n)
+    reco[i,prds %in% selected] <- 1
+    
+  }
+    
+  return(reco)
+}
+
+#Function to compute true positives 
+get_tp <- function(pred,actual,nreco,goodRating=3){
+  tp <- sum(pred > 0 & actual >= goodRating,na.rm=T)
+  mean_tp <- tp/(nrow(actual))
+  return(mean_tp)
+}
+
+```
+Top 100 products are considered as popular products and later used to make popularity based recommendations.  
+
+```{r}
+popular_prods <- get_top_prods(reviews_score,100)
+```
+
+### Item Based Collaborative filtering 
+
+```{r}
+train_ibcf <- function(eval_sets, nreco = 10){
+
+  model_ibcf=Recommender(data=getData(eval_sets,"train"),method="IBCF",
+                         parameter=list(method="pearson",normalize=NA,k=20))
+  
+  recommend_rli=predict(model_ibcf,getData(eval_sets,"known"),n=10)
+  
+  eval_accuracy <- calcPredictionAccuracy(
+    x = recommend_rli, data = getData(eval_sets, "unknown"), byUser = F, goodRating = 3,
+    given=10)
+  message("TP Rate: ",round(eval_accuracy[1]/nreco*100,2),"%")
+  return(model_ibcf)
+}
+
+model_ibcf <- train_ibcf(eval_sets)
+```  
+The item based collaborative filtering gave 20% true positive rate for the first 10 recommendations.   
+
+
+### User Based Collaborative filtering 
+```{r}
+#Function to train ubcf model
+train_ubcf <- function(eval_sets, nreco = 10){
+  
+  model_ubcf=Recommender(data=getData(eval_sets,"train"),method="UBCF",
+                         parameter=list(method="cosine",nn=20, normalize=NA
+                                        ))
+  recommend_rl=predict(model_ubcf,getData(eval_sets,"known"),n=nreco)
+  
+  eval_accuracy <- calcPredictionAccuracy(
+    x = recommend_rl, data = getData(eval_sets, "unknown"), byUser = F, goodRating = 3,
+    given=8)
+  message("TP Rate: ",round(eval_accuracy[1]/nreco*100,2),"%")
+  return(model_ubcf)
+}
+
+model_ubcf <- train_ubcf(eval_sets)
+
+```
+
+User based collaborative method performed better than item based collaborative filtering and gave about 40% true positive rate for first 10 recommendations.  
+
+## Addressing Cold Start
+
+For new user with no rating the recommendation are made from popular item list. The recommendation are selected randomly from top 100 items rather than suggesting only top items. This allows for exploration and hence the function defined above to get rating by popularity has a naive explore/exploitation scheme built-in.  
+  
+
+
+## Explore/Exploit Schemes  
+
+A collaborative  system that always recommends same set of products is not attractive. Also, the accuracy of predictions does not improve after initial set of recommendation. 
+
+Heuristic Methods
+Ratio Based - Select n% of items from top recommended list and rest randomly
+eGreedy - Select top recommended item with probability 1 - e and other items with probability e  
+
+```{r}
+#Function that makes recommendation using explore/exploit method
+explore_exploit_herustic <- function(recos,n,exploit=0.3,prob=NULL){
+  bn <- bestN(recos,ceiling(n*exploit))
+  ratings = as(bn,"matrix")
+  ratings[!is.na(ratings)] <- 1
+  ratings[is.na(ratings)] <- 0
+  for(i in 1:nrow(ratings)){
+    items <- which(ratings[i,]==0)
+    sel <- sample(items,n*(1-exploit))
+    ratings[i,sel] <- 1
+  }
+  return(ratings)
+  
+}
+
+#Explore exploit scheme based on eGreedy method
+explore_exploit_eGreedy<- function(recos,e=.1,n,goodRating = 3){
+  bn <- recos
+  ratings = as(bn,"matrix")
+  ratings[is.na(ratings)] <- -1
+  for(i in 1:nrow(ratings)){
+    #Initialize probabilities to e
+    probs <- as.vector(rep(e,ncol(ratings)))
+    #Set probability of recommended items to 1 - e
+    probs[ratings[i,]>=goodRating] <- (1 - e)
+    sel <- sample(ncol(ratings),n,prob=probs)
+    ratings[i,] <- 0
+    ratings[i,sel] <- 1
+  }
+  return(ratings)
+  
+}
+```
+## Simulating User Visit
+
+Evaluating the model in batch mode has its restriction. It does not allow one to accurately check performance when explore/exploit is used.
+
+In order to do a holistic evaluation of the system we need to simulate user visit and check the progressive performance of the system. 
+
+```{r}
+#Function to set known ratings 
+set_known <- function(x,n){
+  known = x
+  unknown = x
+  for(i in 1:nrow(x)){
+    all_known <- which(!is.na(x[i,]))
+    nknown <- length(all_known)
+    if (n < nknown){
+      known[i,all_known[(n+1):nknown]] <- NA
+      unknown[i,all_known[1:n]] <- NA
+    } else {
+      unknown[i,] <- NA
+    }
+  }
+  return(list(known=known,unknown=unknown))
+}
+
+
+
+#Function to simulate user visit and use a recommendation scheme
+simulate_user_visit <- function(rating,reco_scheme,nvisits=10,nsel=2,nreco=10,
+                                ...){
+  evals <- NULL
+  cum_tp <- 0
+  for (i in 1:nvisits){
+    message("User Visit: ",i)
+    #Number of items user buys in each visit
+    selected <- 1 + (i - 1) * nsel
+    split_rating <- set_known(rating, selected)
+    known_rating <- split_rating$known
+    unknown_rating <- split_rating$unknown
+    recos <- reco_scheme(known_rating,nreco,...)
+    tp <- get_tp(recos,unknown_rating,nreco)
+    cum_tp <- cum_tp + tp
+    message("Cumulative True Positive:",cum_tp)
+    evals <- rbind(evals,data.frame(visit=i,tp=tp))
+    
+  }
+  return(evals)
+}
+
+
+```
+We shall define various recommendation schemes as function and provide that to the simulation function in order to evaluate the system.
+
+```{r}
+
+# Popularity only based scheme - Recommend item only by popularity
+scheme_popularity <- function(known_rating,nreco){
+    get_popular(known_rating,popular_prods,nreco)
+}
+
+# Use IBCF and heuristic explore, exploit method. 
+# If available rating is less than 4 (cold start) then use popularity based method
+scheme_ibcf_exp <- function(known_rating,nreco,exploit){
+  if (mean(colSums(known_rating,na.rm = T)) < 5){
+    message("Cold Start: Using Popularity based recommendation")
+    get_popular(known_rating,popular_prods,nreco)
+  } else {
+    model <- model_ibcf
+    model_reco <- predict(model, as(known_rating,"realRatingMatrix"),n=nreco)
+    #Use explore exploitation method
+    final_reco <- explore_exploit_herustic(model_reco,n = nreco,exploit=exploit)
+    return(final_reco)
+  }
+}
+
+# Use UBCF and heuristic explore, exploit method. 
+# If available rating is less than 4 (cold start) then use popularity based method
+scheme_ubcf_exp <- function(known_rating,nreco,exploit){
+  if (mean(colSums(known_rating,na.rm = T)) < 5){
+    message("Cold Start: Using Popularity based recommendation")
+    get_popular(known_rating,popular_prods,nreco)
+  } else {
+    model <- model_ubcf
+    model_reco <- predict(model, as(known_rating,"realRatingMatrix"),n=nreco)
+    #Use explore exploitation method
+    final_reco <- explore_exploit_herustic(model_reco,n = nreco,exploit=exploit)
+    return(final_reco)
+  }
+}
+
+
+```
+
+## Model Run and Analysis
+
+We shall simulate user visits and check the model performance for various recommendation schemes
+
+**Recommendation only Based on Popularity**  
+```{r, message=FALSE}
+pop_tp <- simulate_user_visit(test_rating,scheme_popularity)
+pop_tp$cumulative_tp = cumsum(pop_tp$tp)
+kable(pop_tp,caption="Popularity Based",digits=4)
+```
+
+**IBCF Based Recommendation using explore/exploit technique with popularity based method for cold start**
+```{r, message=F}
+ibcf_tp <- simulate_user_visit(test_rating,scheme_ibcf_exp,10,2,10,exploit=.5)
+ibcf_tp$cumulative_tp = cumsum(ibcf_tp$tp)
+kable(ibcf_tp,caption="IBCF Based Scheme")
+```
+
+**UBCF Based Recommendation using explore/exploit technique with popularity based method for cold start**
+```{r, message=F}
+ubcf_tp <- simulate_user_visit(test_rating,scheme_ubcf_exp,10,2,10,exploit=.5)
+ubcf_tp$cumulative_tp = cumsum(ubcf_tp$tp)
+kable(ubcf_tp,caption="UBCF Based Scheme")  
+```
+
+Comparing the three schemes
+
+```{r}
+
+
+plot(pop_tp$cumulative_tp,type="l",col="blue",ylim=c(0,15),
+     main="Various Recommendation Schemes",
+     xlab = "User Visits", ylab = "Cumulative True Positive")
+lines(ibcf_tp$cumulative_tp,col="black")
+lines(ubcf_tp$cumulative_tp,col="orchid")
+legend(1,15,c("Popularity","IBCF","UBCF"),col=c("blue","black","orchid"),lty=c(1,1,1))
+```  
+
+The popularity based scheme didn't do well which is expected. UBCF based scheme provided the best results. We could see that initially (until two user visits) all the schemes perform same due to cold start (all the schemes use popularity based method for cold start). We could also see that the tp rate reduces as user visits more and selects the recommended items. Once user select most of the recommended items the true positives would come mostly from explore scheme and explore schemes tend to have very low true positive rates. 
+
+## Summary  
+Given below list of some key points learned from building the system  
+   
+- Normalization does not always improve performance of recommender  
+- Explore/Exploitation schemes improve response rate during long run and traditional evaluation methods are not suitable to evaluate explore schemes
+- Cold start solution needs its own explore/exploitation scheme
+- In order to test online performance of the system a simulation of user visits needs to be done  
